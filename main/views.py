@@ -33,7 +33,7 @@ def roommate_survey(request):
             tmp = form.save(commit = False)
             tmp.user = request.user
             tmp.save()
-            return redirect('home')
+            return redirect('/')
     # otherwise, it's a get request so get the form
     user = request.user
     form = RoommateSurveyForm
