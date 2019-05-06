@@ -18,14 +18,15 @@ class SignUp(generic.CreateView):
 def homepage(request):
     # redirects to form or home depending on if user has filled out form before
     user = request.user
-    if hasattr(user, 'roommatesurvey'):
-        return redirect('home')
+    # if user is not logged in or already not have the attribute
+    if user == None or not user.is_authenticated or hasattr(user, 'roommatesurvey'):
+        return redirect('landing')
     else:
         return redirect('survey')
 
 
 def roommate_survey(request):
-    # user submitted theform
+    # user submitted the form
     if request.method == 'POST':
         form = RoommateSurveyForm(request.POST)
         if form.is_valid():
@@ -37,7 +38,3 @@ def roommate_survey(request):
     user = request.user
     form = RoommateSurveyForm
     return render(request, 'homepage.html', {'form': form, 'user': user})
-
-
-def thanks(request):
-    return HttpResponse('Thanks!')

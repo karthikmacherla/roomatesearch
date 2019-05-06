@@ -122,4 +122,4 @@ STATIC_URL = '/static/'
 AUTH_USER_MODEL = 'main.CustomUser'
 
 LOGIN_REDIRECT_URL = 'homepage'
-LOGOUT_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'homepage'
