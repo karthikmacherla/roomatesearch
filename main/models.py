@@ -8,7 +8,7 @@ class CustomUser(AbstractUser):
 		return self.first_name + ' ' + self.last_name
 
 class RoommateSurvey(models.Model):
-	user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
+	user = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
 	do_you_drink = models.BooleanField()
 	do_you_smoke = models.BooleanField()
 	are_you_sporty = models.BooleanField()
