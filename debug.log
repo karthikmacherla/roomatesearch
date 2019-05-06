@@ -1,0 +1,1147 @@
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/locale with glob **/*.mo.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 19:51:04.818310' AND "django_session"."session_key" = 'dahvy22lon4y73kw3ymqlar5cdafqp01'); args=('2019-05-06 19:51:04.818310', 'dahvy22lon4y73kw3ymqlar5cdafqp01')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 4; args=(4,)
+"GET / HTTP/1.1" 200 252
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 19:51:06.680866' AND "django_session"."session_key" = 'dahvy22lon4y73kw3ymqlar5cdafqp01'); args=('2019-05-06 19:51:06.680866', 'dahvy22lon4y73kw3ymqlar5cdafqp01')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 4; args=(4,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'dahvy22lon4y73kw3ymqlar5cdafqp01'; args=('dahvy22lon4y73kw3ymqlar5cdafqp01',)
+(0.004) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('dahvy22lon4y73kw3ymqlar5cdafqp01'); args=('dahvy22lon4y73kw3ymqlar5cdafqp01',)
+"GET /main/logout/ HTTP/1.1" 302 0
+Internal Server Error: /main/homepage/
+Traceback (most recent call last):
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py", line 33, in homepage
+    logger.debug(user.category_set.all())
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/utils/functional.py", line 257, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'category_set'
+"GET /main/homepage/ HTTP/1.1" 500 65523
+"GET / HTTP/1.1" 200 300
+"GET /main/login/ HTTP/1.1" 200 652
+(0.001) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."username" = 'bobbob'; args=('bobbob',)
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'ni58m1iupsj30n9smqaahglczhqg8did'  LIMIT 1; args=('ni58m1iupsj30n9smqaahglczhqg8did',)
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'ni58m1iupsj30n9smqaahglczhqg8did', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 19:51:23.203938'; args=('ni58m1iupsj30n9smqaahglczhqg8did', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 19:51:23.203938')
+(0.001) UPDATE "main_customuser" SET "last_login" = '2019-05-06 19:51:23.209564' WHERE "main_customuser"."id" = 4; args=('2019-05-06 19:51:23.209564', 4)
+(0.000) BEGIN; args=None
+(0.001) UPDATE "django_session" SET "session_data" = 'YTQzZTIwYTlmZmIyNzM2OTQ2Nzg0YTViMTJmYWY4NDI4NDY1MDlkNjp7Il9hdXRoX3VzZXJfaWQiOiI0IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIxNzlmYTcyMWUxNjUzNzFiNzU2NDRlZThlMGEwYTA4OGExZGRiODdjIn0=', "expire_date" = '2019-05-20 19:51:23.212810' WHERE "django_session"."session_key" = 'ni58m1iupsj30n9smqaahglczhqg8did'; args=('YTQzZTIwYTlmZmIyNzM2OTQ2Nzg0YTViMTJmYWY4NDI4NDY1MDlkNjp7Il9hdXRoX3VzZXJfaWQiOiI0IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIxNzlmYTcyMWUxNjUzNzFiNzU2NDRlZThlMGEwYTA4OGExZGRiODdjIn0=', '2019-05-20 19:51:23.212810', 'ni58m1iupsj30n9smqaahglczhqg8did')
+"POST /main/login/ HTTP/1.1" 302 0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 19:51:23.220697' AND "django_session"."session_key" = 'ni58m1iupsj30n9smqaahglczhqg8did'); args=('2019-05-06 19:51:23.220697', 'ni58m1iupsj30n9smqaahglczhqg8did')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 4; args=(4,)
+"GET /main/homepage/ HTTP/1.1" 302 0
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 19:51:23.234391' AND "django_session"."session_key" = 'ni58m1iupsj30n9smqaahglczhqg8did'); args=('2019-05-06 19:51:23.234391', 'ni58m1iupsj30n9smqaahglczhqg8did')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 4; args=(4,)
+"GET / HTTP/1.1" 200 252
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py. is_changed: False, is_new: True
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py previous mtime: None, current mtime: 1557172317.0554593
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py notified as changed. Signal results: [(<function translation_file_changed at 0x103232620>, None)].
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/locale with glob **/*.mo.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 19:51:59.898304' AND "django_session"."session_key" = 'ni58m1iupsj30n9smqaahglczhqg8did'); args=('2019-05-06 19:51:59.898304', 'ni58m1iupsj30n9smqaahglczhqg8did')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 4; args=(4,)
+"GET / HTTP/1.1" 200 252
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 19:52:01.115409' AND "django_session"."session_key" = 'ni58m1iupsj30n9smqaahglczhqg8did'); args=('2019-05-06 19:52:01.115409', 'ni58m1iupsj30n9smqaahglczhqg8did')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 4; args=(4,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'ni58m1iupsj30n9smqaahglczhqg8did'; args=('ni58m1iupsj30n9smqaahglczhqg8did',)
+(0.001) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('ni58m1iupsj30n9smqaahglczhqg8did'); args=('ni58m1iupsj30n9smqaahglczhqg8did',)
+"GET /main/logout/ HTTP/1.1" 302 0
+Internal Server Error: /main/homepage/
+Traceback (most recent call last):
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py", line 33, in homepage
+    logger.debug("asdfasdfasdfasdf" + user.category_set.all())
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/utils/functional.py", line 257, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'category_set'
+"GET /main/homepage/ HTTP/1.1" 500 65585
+"GET / HTTP/1.1" 200 300
+"GET /main/login/ HTTP/1.1" 200 652
+(0.001) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."username" = 'bobbob'; args=('bobbob',)
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'h8azdqb2s0pzn1lgw3cqmknkag4lvjz6'  LIMIT 1; args=('h8azdqb2s0pzn1lgw3cqmknkag4lvjz6',)
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'h8azdqb2s0pzn1lgw3cqmknkag4lvjz6', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 19:52:09.275448'; args=('h8azdqb2s0pzn1lgw3cqmknkag4lvjz6', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 19:52:09.275448')
+(0.001) UPDATE "main_customuser" SET "last_login" = '2019-05-06 19:52:09.279368' WHERE "main_customuser"."id" = 4; args=('2019-05-06 19:52:09.279368', 4)
+(0.000) BEGIN; args=None
+(0.000) UPDATE "django_session" SET "session_data" = 'YTQzZTIwYTlmZmIyNzM2OTQ2Nzg0YTViMTJmYWY4NDI4NDY1MDlkNjp7Il9hdXRoX3VzZXJfaWQiOiI0IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIxNzlmYTcyMWUxNjUzNzFiNzU2NDRlZThlMGEwYTA4OGExZGRiODdjIn0=', "expire_date" = '2019-05-20 19:52:09.282647' WHERE "django_session"."session_key" = 'h8azdqb2s0pzn1lgw3cqmknkag4lvjz6'; args=('YTQzZTIwYTlmZmIyNzM2OTQ2Nzg0YTViMTJmYWY4NDI4NDY1MDlkNjp7Il9hdXRoX3VzZXJfaWQiOiI0IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIxNzlmYTcyMWUxNjUzNzFiNzU2NDRlZThlMGEwYTA4OGExZGRiODdjIn0=', '2019-05-20 19:52:09.282647', 'h8azdqb2s0pzn1lgw3cqmknkag4lvjz6')
+"POST /main/login/ HTTP/1.1" 302 0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 19:52:09.289969' AND "django_session"."session_key" = 'h8azdqb2s0pzn1lgw3cqmknkag4lvjz6'); args=('2019-05-06 19:52:09.289969', 'h8azdqb2s0pzn1lgw3cqmknkag4lvjz6')
+(0.001) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 4; args=(4,)
+Internal Server Error: /main/homepage/
+Traceback (most recent call last):
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py", line 33, in homepage
+    logger.debug("asdfasdfasdfasdf" + user.category_set.all())
+TypeError: must be str, not QuerySet
+"GET /main/homepage/ HTTP/1.1" 500 61940
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py. is_changed: False, is_new: True
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py previous mtime: None, current mtime: 1557172348.1556594
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py notified as changed. Signal results: [(<function translation_file_changed at 0x106a44620>, None)].
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/locale with glob **/*.mo.
+(0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 19:52:36.492086' AND "django_session"."session_key" = 'h8azdqb2s0pzn1lgw3cqmknkag4lvjz6'); args=('2019-05-06 19:52:36.492086', 'h8azdqb2s0pzn1lgw3cqmknkag4lvjz6')
+(0.001) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 4; args=(4,)
+"GET / HTTP/1.1" 200 252
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 19:52:38.310396' AND "django_session"."session_key" = 'h8azdqb2s0pzn1lgw3cqmknkag4lvjz6'); args=('2019-05-06 19:52:38.310396', 'h8azdqb2s0pzn1lgw3cqmknkag4lvjz6')
+(0.001) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 4; args=(4,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'h8azdqb2s0pzn1lgw3cqmknkag4lvjz6'; args=('h8azdqb2s0pzn1lgw3cqmknkag4lvjz6',)
+(0.004) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('h8azdqb2s0pzn1lgw3cqmknkag4lvjz6'); args=('h8azdqb2s0pzn1lgw3cqmknkag4lvjz6',)
+"GET /main/logout/ HTTP/1.1" 302 0
+Internal Server Error: /main/homepage/
+Traceback (most recent call last):
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py", line 33, in homepage
+    logger.debug("asdfasdfasdfasdf" + user.category_set.all().__str__())
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/utils/functional.py", line 257, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'category_set'
+"GET /main/homepage/ HTTP/1.1" 500 65605
+"GET / HTTP/1.1" 200 300
+"GET /main/login/ HTTP/1.1" 200 652
+(0.005) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."username" = 'laniel'; args=('laniel',)
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'e5p84m7llrzzd655pai4iajii79n148s'  LIMIT 1; args=('e5p84m7llrzzd655pai4iajii79n148s',)
+(0.000) BEGIN; args=None
+(0.002) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'e5p84m7llrzzd655pai4iajii79n148s', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 19:52:44.706322'; args=('e5p84m7llrzzd655pai4iajii79n148s', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 19:52:44.706322')
+(0.003) UPDATE "main_customuser" SET "last_login" = '2019-05-06 19:52:44.716238' WHERE "main_customuser"."id" = 2; args=('2019-05-06 19:52:44.716238', 2)
+(0.000) BEGIN; args=None
+(0.001) UPDATE "django_session" SET "session_data" = 'MGMwMjMxMjE2MzQ4NDVlYmQ3Njk5MmQ1MGFjYjgxMWUzODQ1ZThkOTp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyNzc0MDBmNTI3MjdlZTU3YTE0MGJlNjExODQ1ZmYwOTEwZGY3MThjIn0=', "expire_date" = '2019-05-20 19:52:44.724792' WHERE "django_session"."session_key" = 'e5p84m7llrzzd655pai4iajii79n148s'; args=('MGMwMjMxMjE2MzQ4NDVlYmQ3Njk5MmQ1MGFjYjgxMWUzODQ1ZThkOTp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyNzc0MDBmNTI3MjdlZTU3YTE0MGJlNjExODQ1ZmYwOTEwZGY3MThjIn0=', '2019-05-20 19:52:44.724792', 'e5p84m7llrzzd655pai4iajii79n148s')
+"POST /main/login/ HTTP/1.1" 302 0
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 19:52:44.748194' AND "django_session"."session_key" = 'e5p84m7llrzzd655pai4iajii79n148s'); args=('2019-05-06 19:52:44.748194', 'e5p84m7llrzzd655pai4iajii79n148s')
+(0.002) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 2; args=(2,)
+(0.001) SELECT "main_category"."name" FROM "main_category" INNER JOIN "main_category_users" ON ("main_category"."name" = "main_category_users"."category_id") WHERE "main_category_users"."customuser_id" = 2  LIMIT 21; args=(2,)
+"GET /main/homepage/ HTTP/1.1" 302 0
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 19:52:44.796594' AND "django_session"."session_key" = 'e5p84m7llrzzd655pai4iajii79n148s'); args=('2019-05-06 19:52:44.796594', 'e5p84m7llrzzd655pai4iajii79n148s')
+(0.001) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 2; args=(2,)
+"GET / HTTP/1.1" 200 252
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py. is_changed: False, is_new: True
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py previous mtime: None, current mtime: 1557172461.4943204
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py notified as changed. Signal results: [(<function translation_file_changed at 0x105922620>, None)].
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/locale with glob **/*.mo.
+(0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py. is_changed: False, is_new: True
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py previous mtime: None, current mtime: 1557172525.2328644
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py notified as changed. Signal results: [(<function translation_file_changed at 0x1048bf620>, None)].
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/locale with glob **/*.mo.
+(0.007) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 19:55:57.975898' AND "django_session"."session_key" = 'e5p84m7llrzzd655pai4iajii79n148s'); args=('2019-05-06 19:55:57.975898', 'e5p84m7llrzzd655pai4iajii79n148s')
+(0.001) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 2; args=(2,)
+"GET / HTTP/1.1" 200 252
+(0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 19:56:00.467474' AND "django_session"."session_key" = 'e5p84m7llrzzd655pai4iajii79n148s'); args=('2019-05-06 19:56:00.467474', 'e5p84m7llrzzd655pai4iajii79n148s')
+(0.001) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 2; args=(2,)
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'e5p84m7llrzzd655pai4iajii79n148s'; args=('e5p84m7llrzzd655pai4iajii79n148s',)
+(0.004) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('e5p84m7llrzzd655pai4iajii79n148s'); args=('e5p84m7llrzzd655pai4iajii79n148s',)
+"GET /main/logout/ HTTP/1.1" 302 0
+Internal Server Error: /main/homepage/
+Traceback (most recent call last):
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py", line 32, in homepage
+    logger.debug("asdfasdfasdfasdf" + user.category_set.all().__str__())
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/utils/functional.py", line 257, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'category_set'
+"GET /main/homepage/ HTTP/1.1" 500 65792
+"GET / HTTP/1.1" 200 300
+"GET /main/login/ HTTP/1.1" 200 652
+(0.003) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."username" = 'laniel'; args=('laniel',)
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'z0aosmxm9auvvmieh5nqmmdnpfczxlxh'  LIMIT 1; args=('z0aosmxm9auvvmieh5nqmmdnpfczxlxh',)
+(0.000) BEGIN; args=None
+(0.001) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'z0aosmxm9auvvmieh5nqmmdnpfczxlxh', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 19:56:07.938775'; args=('z0aosmxm9auvvmieh5nqmmdnpfczxlxh', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 19:56:07.938775')
+(0.003) UPDATE "main_customuser" SET "last_login" = '2019-05-06 19:56:07.946039' WHERE "main_customuser"."id" = 2; args=('2019-05-06 19:56:07.946039', 2)
+(0.000) BEGIN; args=None
+(0.001) UPDATE "django_session" SET "session_data" = 'MGMwMjMxMjE2MzQ4NDVlYmQ3Njk5MmQ1MGFjYjgxMWUzODQ1ZThkOTp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyNzc0MDBmNTI3MjdlZTU3YTE0MGJlNjExODQ1ZmYwOTEwZGY3MThjIn0=', "expire_date" = '2019-05-20 19:56:07.954959' WHERE "django_session"."session_key" = 'z0aosmxm9auvvmieh5nqmmdnpfczxlxh'; args=('MGMwMjMxMjE2MzQ4NDVlYmQ3Njk5MmQ1MGFjYjgxMWUzODQ1ZThkOTp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyNzc0MDBmNTI3MjdlZTU3YTE0MGJlNjExODQ1ZmYwOTEwZGY3MThjIn0=', '2019-05-20 19:56:07.954959', 'z0aosmxm9auvvmieh5nqmmdnpfczxlxh')
+"POST /main/login/ HTTP/1.1" 302 0
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 19:56:07.978605' AND "django_session"."session_key" = 'z0aosmxm9auvvmieh5nqmmdnpfczxlxh'); args=('2019-05-06 19:56:07.978605', 'z0aosmxm9auvvmieh5nqmmdnpfczxlxh')
+(0.001) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 2; args=(2,)
+(0.000) SELECT "main_category"."name" FROM "main_category" INNER JOIN "main_category_users" ON ("main_category"."name" = "main_category_users"."category_id") WHERE "main_category_users"."customuser_id" = 2  LIMIT 21; args=(2,)
+"GET /main/homepage/ HTTP/1.1" 302 0
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 19:56:08.024722' AND "django_session"."session_key" = 'z0aosmxm9auvvmieh5nqmmdnpfczxlxh'); args=('2019-05-06 19:56:08.024722', 'z0aosmxm9auvvmieh5nqmmdnpfczxlxh')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 2; args=(2,)
+"GET / HTTP/1.1" 200 252
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py. is_changed: False, is_new: True
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py previous mtime: None, current mtime: 1557172605.3545773
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py notified as changed. Signal results: [(<function translation_file_changed at 0x111232620>, None)].
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/locale with glob **/*.mo.
+(0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py. is_changed: False, is_new: True
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py previous mtime: None, current mtime: 1557172608.3157392
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py notified as changed. Signal results: [(<function translation_file_changed at 0x108617620>, None)].
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/locale with glob **/*.mo.
+(0.005) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.003) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.007) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 19:56:52.183766' AND "django_session"."session_key" = 'z0aosmxm9auvvmieh5nqmmdnpfczxlxh'); args=('2019-05-06 19:56:52.183766', 'z0aosmxm9auvvmieh5nqmmdnpfczxlxh')
+(0.003) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 2; args=(2,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'z0aosmxm9auvvmieh5nqmmdnpfczxlxh'; args=('z0aosmxm9auvvmieh5nqmmdnpfczxlxh',)
+(0.011) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('z0aosmxm9auvvmieh5nqmmdnpfczxlxh'); args=('z0aosmxm9auvvmieh5nqmmdnpfczxlxh',)
+"GET /main/logout/ HTTP/1.1" 302 0
+"GET /main/homepage/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 300
+"GET /main/login/ HTTP/1.1" 200 652
+(0.003) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."username" = 'daniel'; args=('daniel',)
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'cnr7plld65lo5n5rxqa56rhndvs25suz'  LIMIT 1; args=('cnr7plld65lo5n5rxqa56rhndvs25suz',)
+(0.000) BEGIN; args=None
+(0.001) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'cnr7plld65lo5n5rxqa56rhndvs25suz', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 19:57:01.438081'; args=('cnr7plld65lo5n5rxqa56rhndvs25suz', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 19:57:01.438081')
+(0.004) UPDATE "main_customuser" SET "last_login" = '2019-05-06 19:57:01.446887' WHERE "main_customuser"."id" = 3; args=('2019-05-06 19:57:01.446887', 3)
+(0.000) BEGIN; args=None
+(0.001) UPDATE "django_session" SET "session_data" = 'MDc4ZDhhMTY2OWI2MTZiODMxY2NjNTM0ZWE4ZTkwNGIzM2E1ZGFlOTp7Il9hdXRoX3VzZXJfaWQiOiIzIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIxN2YwZWMzMmI1NjE3NTc3N2NlMjg1MWY1YjY4YmY4NzAyZDY4Mjg0In0=', "expire_date" = '2019-05-20 19:57:01.456879' WHERE "django_session"."session_key" = 'cnr7plld65lo5n5rxqa56rhndvs25suz'; args=('MDc4ZDhhMTY2OWI2MTZiODMxY2NjNTM0ZWE4ZTkwNGIzM2E1ZGFlOTp7Il9hdXRoX3VzZXJfaWQiOiIzIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIxN2YwZWMzMmI1NjE3NTc3N2NlMjg1MWY1YjY4YmY4NzAyZDY4Mjg0In0=', '2019-05-20 19:57:01.456879', 'cnr7plld65lo5n5rxqa56rhndvs25suz')
+"POST /main/login/ HTTP/1.1" 302 0
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 19:57:01.479631' AND "django_session"."session_key" = 'cnr7plld65lo5n5rxqa56rhndvs25suz'); args=('2019-05-06 19:57:01.479631', 'cnr7plld65lo5n5rxqa56rhndvs25suz')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 3; args=(3,)
+"GET /main/homepage/ HTTP/1.1" 302 0
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 19:57:01.512087' AND "django_session"."session_key" = 'cnr7plld65lo5n5rxqa56rhndvs25suz'); args=('2019-05-06 19:57:01.512087', 'cnr7plld65lo5n5rxqa56rhndvs25suz')
+(0.001) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 3; args=(3,)
+"GET / HTTP/1.1" 200 252
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 19:57:03.057681' AND "django_session"."session_key" = 'cnr7plld65lo5n5rxqa56rhndvs25suz'); args=('2019-05-06 19:57:03.057681', 'cnr7plld65lo5n5rxqa56rhndvs25suz')
+(0.001) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 3; args=(3,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'cnr7plld65lo5n5rxqa56rhndvs25suz'; args=('cnr7plld65lo5n5rxqa56rhndvs25suz',)
+(0.008) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('cnr7plld65lo5n5rxqa56rhndvs25suz'); args=('cnr7plld65lo5n5rxqa56rhndvs25suz',)
+"GET /main/logout/ HTTP/1.1" 302 0
+"GET /main/homepage/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 300
+"GET /main/login/ HTTP/1.1" 200 652
+(0.002) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."username" = 'laniel'; args=('laniel',)
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = '1zfkng9hraotw8knnnrh7ogik9ebzerl'  LIMIT 1; args=('1zfkng9hraotw8knnnrh7ogik9ebzerl',)
+(0.000) BEGIN; args=None
+(0.001) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT '1zfkng9hraotw8knnnrh7ogik9ebzerl', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 19:57:07.032301'; args=('1zfkng9hraotw8knnnrh7ogik9ebzerl', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 19:57:07.032301')
+(0.003) UPDATE "main_customuser" SET "last_login" = '2019-05-06 19:57:07.041051' WHERE "main_customuser"."id" = 2; args=('2019-05-06 19:57:07.041051', 2)
+(0.000) BEGIN; args=None
+(0.001) UPDATE "django_session" SET "session_data" = 'MGMwMjMxMjE2MzQ4NDVlYmQ3Njk5MmQ1MGFjYjgxMWUzODQ1ZThkOTp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyNzc0MDBmNTI3MjdlZTU3YTE0MGJlNjExODQ1ZmYwOTEwZGY3MThjIn0=', "expire_date" = '2019-05-20 19:57:07.048790' WHERE "django_session"."session_key" = '1zfkng9hraotw8knnnrh7ogik9ebzerl'; args=('MGMwMjMxMjE2MzQ4NDVlYmQ3Njk5MmQ1MGFjYjgxMWUzODQ1ZThkOTp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyNzc0MDBmNTI3MjdlZTU3YTE0MGJlNjExODQ1ZmYwOTEwZGY3MThjIn0=', '2019-05-20 19:57:07.048790', '1zfkng9hraotw8knnnrh7ogik9ebzerl')
+"POST /main/login/ HTTP/1.1" 302 0
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 19:57:07.072278' AND "django_session"."session_key" = '1zfkng9hraotw8knnnrh7ogik9ebzerl'); args=('2019-05-06 19:57:07.072278', '1zfkng9hraotw8knnnrh7ogik9ebzerl')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 2; args=(2,)
+"GET /main/homepage/ HTTP/1.1" 302 0
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 19:57:07.105985' AND "django_session"."session_key" = '1zfkng9hraotw8knnnrh7ogik9ebzerl'); args=('2019-05-06 19:57:07.105985', '1zfkng9hraotw8knnnrh7ogik9ebzerl')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 2; args=(2,)
+"GET / HTTP/1.1" 200 252
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/locale with glob **/*.mo.
+(0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:05:03.264480' AND "django_session"."session_key" = '1zfkng9hraotw8knnnrh7ogik9ebzerl'); args=('2019-05-06 20:05:03.264480', '1zfkng9hraotw8knnnrh7ogik9ebzerl')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 2; args=(2,)
+"GET / HTTP/1.1" 200 252
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/urls/resolvers.py", line 558, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern '' [name='landing']>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'main.urls' from '/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/urls.py'> (None:None) 'main/'>], [<URLResolver <module 'django.contrib.auth.urls' from '/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/auth/urls.py'> (None:None) 'main/'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/urls/resolvers.py", line 558, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern '' [name='landing']>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'main.urls' from '/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/urls.py'> (None:None) 'main/'>], [<URLResolver <module 'django.contrib.auth.urls' from '/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/auth/urls.py'> (None:None) 'main/'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'main.urls' from '/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/urls.py'> (None:None) 'main/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/urls/resolvers.py", line 558, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLPattern '' [name='landing']>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'main.urls' from '/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/urls.py'> (None:None) 'main/'>], [<URLResolver <module 'django.contrib.auth.urls' from '/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/auth/urls.py'> (None:None) 'main/'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'django.contrib.auth.urls' from '/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/auth/urls.py'> (None:None) 'main/'>
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2305
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:05:05.064651' AND "django_session"."session_key" = '1zfkng9hraotw8knnnrh7ogik9ebzerl'); args=('2019-05-06 20:05:05.064651', '1zfkng9hraotw8knnnrh7ogik9ebzerl')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 2; args=(2,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = '1zfkng9hraotw8knnnrh7ogik9ebzerl'; args=('1zfkng9hraotw8knnnrh7ogik9ebzerl',)
+(0.005) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('1zfkng9hraotw8knnnrh7ogik9ebzerl'); args=('1zfkng9hraotw8knnnrh7ogik9ebzerl',)
+"GET /main/logout/ HTTP/1.1" 302 0
+"GET /main/homepage/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 300
+"GET /main/login/ HTTP/1.1" 200 652
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."username" = 'bobbob'; args=('bobbob',)
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = '4cw3ncc5utv7jeexef1b773hqrf9m35g'  LIMIT 1; args=('4cw3ncc5utv7jeexef1b773hqrf9m35g',)
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT '4cw3ncc5utv7jeexef1b773hqrf9m35g', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 20:05:13.843263'; args=('4cw3ncc5utv7jeexef1b773hqrf9m35g', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 20:05:13.843263')
+(0.001) UPDATE "main_customuser" SET "last_login" = '2019-05-06 20:05:13.848492' WHERE "main_customuser"."id" = 4; args=('2019-05-06 20:05:13.848492', 4)
+(0.000) BEGIN; args=None
+(0.000) UPDATE "django_session" SET "session_data" = 'YTQzZTIwYTlmZmIyNzM2OTQ2Nzg0YTViMTJmYWY4NDI4NDY1MDlkNjp7Il9hdXRoX3VzZXJfaWQiOiI0IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIxNzlmYTcyMWUxNjUzNzFiNzU2NDRlZThlMGEwYTA4OGExZGRiODdjIn0=', "expire_date" = '2019-05-20 20:05:13.851250' WHERE "django_session"."session_key" = '4cw3ncc5utv7jeexef1b773hqrf9m35g'; args=('YTQzZTIwYTlmZmIyNzM2OTQ2Nzg0YTViMTJmYWY4NDI4NDY1MDlkNjp7Il9hdXRoX3VzZXJfaWQiOiI0IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIxNzlmYTcyMWUxNjUzNzFiNzU2NDRlZThlMGEwYTA4OGExZGRiODdjIn0=', '2019-05-20 20:05:13.851250', '4cw3ncc5utv7jeexef1b773hqrf9m35g')
+"POST /main/login/ HTTP/1.1" 302 0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:05:13.861606' AND "django_session"."session_key" = '4cw3ncc5utv7jeexef1b773hqrf9m35g'); args=('2019-05-06 20:05:13.861606', '4cw3ncc5utv7jeexef1b773hqrf9m35g')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 4; args=(4,)
+(0.000) SELECT "main_category_users"."id", "main_category_users"."category_id", "main_category_users"."customuser_id" FROM "main_category_users" WHERE "main_category_users"."customuser_id" = 4; args=(4,)
+(0.000) SELECT COUNT(*) AS "__count" FROM "main_category" INNER JOIN "main_category_users" ON ("main_category"."name" = "main_category_users"."category_id") WHERE "main_category_users"."customuser_id" = 4; args=(4,)
+"GET /main/homepage/ HTTP/1.1" 302 0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:05:13.923257' AND "django_session"."session_key" = '4cw3ncc5utv7jeexef1b773hqrf9m35g'); args=('2019-05-06 20:05:13.923257', '4cw3ncc5utv7jeexef1b773hqrf9m35g')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 4; args=(4,)
+"GET /main/survey/ HTTP/1.1" 200 1245
+"GET /main/login/ HTTP/1.1" 200 652
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:05:17.735807' AND "django_session"."session_key" = '4cw3ncc5utv7jeexef1b773hqrf9m35g'); args=('2019-05-06 20:05:17.735807', '4cw3ncc5utv7jeexef1b773hqrf9m35g')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 4; args=(4,)
+"GET / HTTP/1.1" 200 252
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:05:18.757603' AND "django_session"."session_key" = '4cw3ncc5utv7jeexef1b773hqrf9m35g'); args=('2019-05-06 20:05:18.757603', '4cw3ncc5utv7jeexef1b773hqrf9m35g')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 4; args=(4,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = '4cw3ncc5utv7jeexef1b773hqrf9m35g'; args=('4cw3ncc5utv7jeexef1b773hqrf9m35g',)
+(0.004) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('4cw3ncc5utv7jeexef1b773hqrf9m35g'); args=('4cw3ncc5utv7jeexef1b773hqrf9m35g',)
+"GET /main/logout/ HTTP/1.1" 302 0
+"GET /main/homepage/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 300
+"GET /main/login/ HTTP/1.1" 200 652
+(0.001) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."username" = 'laniel'; args=('laniel',)
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'c9synn31ngpjmz6cz21awn1tymk5z5lm'  LIMIT 1; args=('c9synn31ngpjmz6cz21awn1tymk5z5lm',)
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'c9synn31ngpjmz6cz21awn1tymk5z5lm', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 20:05:20.851710'; args=('c9synn31ngpjmz6cz21awn1tymk5z5lm', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 20:05:20.851710')
+(0.001) UPDATE "main_customuser" SET "last_login" = '2019-05-06 20:05:20.858395' WHERE "main_customuser"."id" = 2; args=('2019-05-06 20:05:20.858395', 2)
+(0.000) BEGIN; args=None
+(0.000) UPDATE "django_session" SET "session_data" = 'MGMwMjMxMjE2MzQ4NDVlYmQ3Njk5MmQ1MGFjYjgxMWUzODQ1ZThkOTp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyNzc0MDBmNTI3MjdlZTU3YTE0MGJlNjExODQ1ZmYwOTEwZGY3MThjIn0=', "expire_date" = '2019-05-20 20:05:20.861587' WHERE "django_session"."session_key" = 'c9synn31ngpjmz6cz21awn1tymk5z5lm'; args=('MGMwMjMxMjE2MzQ4NDVlYmQ3Njk5MmQ1MGFjYjgxMWUzODQ1ZThkOTp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyNzc0MDBmNTI3MjdlZTU3YTE0MGJlNjExODQ1ZmYwOTEwZGY3MThjIn0=', '2019-05-20 20:05:20.861587', 'c9synn31ngpjmz6cz21awn1tymk5z5lm')
+"POST /main/login/ HTTP/1.1" 302 0
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:05:20.868565' AND "django_session"."session_key" = 'c9synn31ngpjmz6cz21awn1tymk5z5lm'); args=('2019-05-06 20:05:20.868565', 'c9synn31ngpjmz6cz21awn1tymk5z5lm')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 2; args=(2,)
+(0.000) SELECT "main_category_users"."id", "main_category_users"."category_id", "main_category_users"."customuser_id" FROM "main_category_users" WHERE "main_category_users"."customuser_id" = 2; args=(2,)
+"GET /main/homepage/ HTTP/1.1" 302 0
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:05:20.881380' AND "django_session"."session_key" = 'c9synn31ngpjmz6cz21awn1tymk5z5lm'); args=('2019-05-06 20:05:20.881380', 'c9synn31ngpjmz6cz21awn1tymk5z5lm')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 2; args=(2,)
+"GET / HTTP/1.1" 200 252
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:05:21.927213' AND "django_session"."session_key" = 'c9synn31ngpjmz6cz21awn1tymk5z5lm'); args=('2019-05-06 20:05:21.927213', 'c9synn31ngpjmz6cz21awn1tymk5z5lm')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 2; args=(2,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'c9synn31ngpjmz6cz21awn1tymk5z5lm'; args=('c9synn31ngpjmz6cz21awn1tymk5z5lm',)
+(0.004) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('c9synn31ngpjmz6cz21awn1tymk5z5lm'); args=('c9synn31ngpjmz6cz21awn1tymk5z5lm',)
+"GET /main/logout/ HTTP/1.1" 302 0
+"GET /main/homepage/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 300
+"GET /main/login/ HTTP/1.1" 200 652
+(0.001) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."username" = 'bobbob'; args=('bobbob',)
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'hfpkj3b9uqvpi8b8qpbwtmsgfcrrvm0y'  LIMIT 1; args=('hfpkj3b9uqvpi8b8qpbwtmsgfcrrvm0y',)
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'hfpkj3b9uqvpi8b8qpbwtmsgfcrrvm0y', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 20:05:27.359166'; args=('hfpkj3b9uqvpi8b8qpbwtmsgfcrrvm0y', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 20:05:27.359166')
+(0.001) UPDATE "main_customuser" SET "last_login" = '2019-05-06 20:05:27.364330' WHERE "main_customuser"."id" = 4; args=('2019-05-06 20:05:27.364330', 4)
+(0.000) BEGIN; args=None
+(0.000) UPDATE "django_session" SET "session_data" = 'YTQzZTIwYTlmZmIyNzM2OTQ2Nzg0YTViMTJmYWY4NDI4NDY1MDlkNjp7Il9hdXRoX3VzZXJfaWQiOiI0IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIxNzlmYTcyMWUxNjUzNzFiNzU2NDRlZThlMGEwYTA4OGExZGRiODdjIn0=', "expire_date" = '2019-05-20 20:05:27.367717' WHERE "django_session"."session_key" = 'hfpkj3b9uqvpi8b8qpbwtmsgfcrrvm0y'; args=('YTQzZTIwYTlmZmIyNzM2OTQ2Nzg0YTViMTJmYWY4NDI4NDY1MDlkNjp7Il9hdXRoX3VzZXJfaWQiOiI0IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIxNzlmYTcyMWUxNjUzNzFiNzU2NDRlZThlMGEwYTA4OGExZGRiODdjIn0=', '2019-05-20 20:05:27.367717', 'hfpkj3b9uqvpi8b8qpbwtmsgfcrrvm0y')
+"POST /main/login/ HTTP/1.1" 302 0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:05:27.374814' AND "django_session"."session_key" = 'hfpkj3b9uqvpi8b8qpbwtmsgfcrrvm0y'); args=('2019-05-06 20:05:27.374814', 'hfpkj3b9uqvpi8b8qpbwtmsgfcrrvm0y')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 4; args=(4,)
+(0.000) SELECT "main_category_users"."id", "main_category_users"."category_id", "main_category_users"."customuser_id" FROM "main_category_users" WHERE "main_category_users"."customuser_id" = 4; args=(4,)
+(0.000) SELECT COUNT(*) AS "__count" FROM "main_category" INNER JOIN "main_category_users" ON ("main_category"."name" = "main_category_users"."category_id") WHERE "main_category_users"."customuser_id" = 4; args=(4,)
+"GET /main/homepage/ HTTP/1.1" 302 0
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:05:27.386791' AND "django_session"."session_key" = 'hfpkj3b9uqvpi8b8qpbwtmsgfcrrvm0y'); args=('2019-05-06 20:05:27.386791', 'hfpkj3b9uqvpi8b8qpbwtmsgfcrrvm0y')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 4; args=(4,)
+"GET /main/survey/ HTTP/1.1" 200 1245
+(0.001) SELECT "main_category"."name" FROM "main_category" WHERE "main_category"."name" = 'morning_person'; args=('morning_person',)
+(0.000) SELECT (1) AS "a" FROM "main_category" WHERE "main_category"."name" = 'morning_person'  LIMIT 1; args=('morning_person',)
+(0.001) INSERT INTO "main_category" ("name") SELECT 'morning_person'; args=('morning_person',)
+(0.000) SELECT "main_category"."name" FROM "main_category" WHERE "main_category"."name" = 'substances'; args=('substances',)
+(0.000) SELECT (1) AS "a" FROM "main_category" WHERE "main_category"."name" = 'substances'  LIMIT 1; args=('substances',)
+(0.001) INSERT INTO "main_category" ("name") SELECT 'substances'; args=('substances',)
+(0.000) SELECT "main_category"."name" FROM "main_category" WHERE "main_category"."name" = 'nursing'; args=('nursing',)
+(0.000) SELECT (1) AS "a" FROM "main_category" WHERE "main_category"."name" = 'nursing'  LIMIT 1; args=('nursing',)
+(0.001) INSERT INTO "main_category" ("name") SELECT 'nursing'; args=('nursing',)
+(0.000) SELECT "main_category"."name" FROM "main_category" WHERE "main_category"."name" = 'hockey'; args=('hockey',)
+(0.000) SELECT (1) AS "a" FROM "main_category" WHERE "main_category"."name" = 'hockey'  LIMIT 1; args=('hockey',)
+(0.001) INSERT INTO "main_category" ("name") SELECT 'hockey'; args=('hockey',)
+(0.000) BEGIN; args=None
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:05:35.795466' AND "django_session"."session_key" = 'hfpkj3b9uqvpi8b8qpbwtmsgfcrrvm0y'); args=('2019-05-06 20:05:35.795466', 'hfpkj3b9uqvpi8b8qpbwtmsgfcrrvm0y')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 4; args=(4,)
+(0.000) SELECT "main_category_users"."customuser_id" FROM "main_category_users" WHERE ("main_category_users"."category_id" = 'morning_person' AND "main_category_users"."customuser_id" IN (4)); args=('morning_person', 4)
+(0.000) INSERT INTO "main_category_users" ("category_id", "customuser_id") SELECT 'morning_person', 4; args=('morning_person', 4)
+(0.000) BEGIN; args=None
+(0.000) SELECT "main_category_users"."customuser_id" FROM "main_category_users" WHERE ("main_category_users"."category_id" = 'substances' AND "main_category_users"."customuser_id" IN (4)); args=('substances', 4)
+(0.000) INSERT INTO "main_category_users" ("category_id", "customuser_id") SELECT 'substances', 4; args=('substances', 4)
+(0.000) BEGIN; args=None
+(0.000) SELECT "main_category_users"."customuser_id" FROM "main_category_users" WHERE ("main_category_users"."category_id" = 'nursing' AND "main_category_users"."customuser_id" IN (4)); args=('nursing', 4)
+(0.000) INSERT INTO "main_category_users" ("category_id", "customuser_id") SELECT 'nursing', 4; args=('nursing', 4)
+(0.000) BEGIN; args=None
+(0.000) SELECT "main_category_users"."customuser_id" FROM "main_category_users" WHERE ("main_category_users"."category_id" = 'hockey' AND "main_category_users"."customuser_id" IN (4)); args=('hockey', 4)
+(0.000) INSERT INTO "main_category_users" ("category_id", "customuser_id") SELECT 'hockey', 4; args=('hockey', 4)
+"POST /main/survey/ HTTP/1.1" 302 0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:05:35.818994' AND "django_session"."session_key" = 'hfpkj3b9uqvpi8b8qpbwtmsgfcrrvm0y'); args=('2019-05-06 20:05:35.818994', 'hfpkj3b9uqvpi8b8qpbwtmsgfcrrvm0y')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 4; args=(4,)
+"GET / HTTP/1.1" 200 252
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:05:42.632276' AND "django_session"."session_key" = 'hfpkj3b9uqvpi8b8qpbwtmsgfcrrvm0y'); args=('2019-05-06 20:05:42.632276', 'hfpkj3b9uqvpi8b8qpbwtmsgfcrrvm0y')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 4; args=(4,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'hfpkj3b9uqvpi8b8qpbwtmsgfcrrvm0y'; args=('hfpkj3b9uqvpi8b8qpbwtmsgfcrrvm0y',)
+(0.004) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('hfpkj3b9uqvpi8b8qpbwtmsgfcrrvm0y'); args=('hfpkj3b9uqvpi8b8qpbwtmsgfcrrvm0y',)
+"GET /main/logout/ HTTP/1.1" 302 0
+"GET /main/homepage/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 300
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 1819
+(0.001) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."username" = 'daniel'; args=('daniel',)
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'cqqe05paus6sn9b5fpxr4sjoo4y5ilba'  LIMIT 1; args=('cqqe05paus6sn9b5fpxr4sjoo4y5ilba',)
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'cqqe05paus6sn9b5fpxr4sjoo4y5ilba', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 20:05:54.056864'; args=('cqqe05paus6sn9b5fpxr4sjoo4y5ilba', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 20:05:54.056864')
+(0.001) UPDATE "main_customuser" SET "last_login" = '2019-05-06 20:05:54.062269' WHERE "main_customuser"."id" = 3; args=('2019-05-06 20:05:54.062269', 3)
+(0.000) BEGIN; args=None
+(0.000) UPDATE "django_session" SET "session_data" = 'MDc4ZDhhMTY2OWI2MTZiODMxY2NjNTM0ZWE4ZTkwNGIzM2E1ZGFlOTp7Il9hdXRoX3VzZXJfaWQiOiIzIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIxN2YwZWMzMmI1NjE3NTc3N2NlMjg1MWY1YjY4YmY4NzAyZDY4Mjg0In0=', "expire_date" = '2019-05-20 20:05:54.065301' WHERE "django_session"."session_key" = 'cqqe05paus6sn9b5fpxr4sjoo4y5ilba'; args=('MDc4ZDhhMTY2OWI2MTZiODMxY2NjNTM0ZWE4ZTkwNGIzM2E1ZGFlOTp7Il9hdXRoX3VzZXJfaWQiOiIzIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIxN2YwZWMzMmI1NjE3NTc3N2NlMjg1MWY1YjY4YmY4NzAyZDY4Mjg0In0=', '2019-05-20 20:05:54.065301', 'cqqe05paus6sn9b5fpxr4sjoo4y5ilba')
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:05:54.071848' AND "django_session"."session_key" = 'cqqe05paus6sn9b5fpxr4sjoo4y5ilba'); args=('2019-05-06 20:05:54.071848', 'cqqe05paus6sn9b5fpxr4sjoo4y5ilba')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 3; args=(3,)
+(0.001) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "main_customuser" ON ("django_admin_log"."user_id" = "main_customuser"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 3 ORDER BY "django_admin_log"."action_time" DESC  LIMIT 10; args=(3,)
+"GET /admin/ HTTP/1.1" 200 5275
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py. is_changed: False, is_new: True
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py previous mtime: None, current mtime: 1557173766.887018
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py notified as changed. Signal results: [(<function translation_file_changed at 0x10d5b3620>, None)].
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/locale with glob **/*.mo.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:19:17.480226' AND "django_session"."session_key" = 'cqqe05paus6sn9b5fpxr4sjoo4y5ilba'); args=('2019-05-06 20:19:17.480226', 'cqqe05paus6sn9b5fpxr4sjoo4y5ilba')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 3; args=(3,)
+"GET / HTTP/1.1" 200 252
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:19:17.813611' AND "django_session"."session_key" = 'cqqe05paus6sn9b5fpxr4sjoo4y5ilba'); args=('2019-05-06 20:19:17.813611', 'cqqe05paus6sn9b5fpxr4sjoo4y5ilba')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 3; args=(3,)
+"GET / HTTP/1.1" 200 252
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:19:19.542084' AND "django_session"."session_key" = 'cqqe05paus6sn9b5fpxr4sjoo4y5ilba'); args=('2019-05-06 20:19:19.542084', 'cqqe05paus6sn9b5fpxr4sjoo4y5ilba')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 3; args=(3,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'cqqe05paus6sn9b5fpxr4sjoo4y5ilba'; args=('cqqe05paus6sn9b5fpxr4sjoo4y5ilba',)
+(0.002) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('cqqe05paus6sn9b5fpxr4sjoo4y5ilba'); args=('cqqe05paus6sn9b5fpxr4sjoo4y5ilba',)
+"GET /main/logout/ HTTP/1.1" 302 0
+"GET /main/homepage/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 300
+"GET /main/login/ HTTP/1.1" 200 652
+(0.001) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."username" = 'laniel'; args=('laniel',)
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'c63wpwmn3r7yu5lsf4d0vnwisi67oc6z'  LIMIT 1; args=('c63wpwmn3r7yu5lsf4d0vnwisi67oc6z',)
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'c63wpwmn3r7yu5lsf4d0vnwisi67oc6z', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 20:19:24.207724'; args=('c63wpwmn3r7yu5lsf4d0vnwisi67oc6z', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 20:19:24.207724')
+(0.001) UPDATE "main_customuser" SET "last_login" = '2019-05-06 20:19:24.211546' WHERE "main_customuser"."id" = 2; args=('2019-05-06 20:19:24.211546', 2)
+(0.000) BEGIN; args=None
+(0.000) UPDATE "django_session" SET "session_data" = 'MGMwMjMxMjE2MzQ4NDVlYmQ3Njk5MmQ1MGFjYjgxMWUzODQ1ZThkOTp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyNzc0MDBmNTI3MjdlZTU3YTE0MGJlNjExODQ1ZmYwOTEwZGY3MThjIn0=', "expire_date" = '2019-05-20 20:19:24.214734' WHERE "django_session"."session_key" = 'c63wpwmn3r7yu5lsf4d0vnwisi67oc6z'; args=('MGMwMjMxMjE2MzQ4NDVlYmQ3Njk5MmQ1MGFjYjgxMWUzODQ1ZThkOTp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyNzc0MDBmNTI3MjdlZTU3YTE0MGJlNjExODQ1ZmYwOTEwZGY3MThjIn0=', '2019-05-20 20:19:24.214734', 'c63wpwmn3r7yu5lsf4d0vnwisi67oc6z')
+"POST /main/login/ HTTP/1.1" 302 0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:19:24.222496' AND "django_session"."session_key" = 'c63wpwmn3r7yu5lsf4d0vnwisi67oc6z'); args=('2019-05-06 20:19:24.222496', 'c63wpwmn3r7yu5lsf4d0vnwisi67oc6z')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 2; args=(2,)
+(0.000) SELECT "main_category_users"."id", "main_category_users"."category_id", "main_category_users"."customuser_id" FROM "main_category_users" WHERE "main_category_users"."customuser_id" = 2; args=(2,)
+"GET /main/homepage/ HTTP/1.1" 302 0
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:19:24.234600' AND "django_session"."session_key" = 'c63wpwmn3r7yu5lsf4d0vnwisi67oc6z'); args=('2019-05-06 20:19:24.234600', 'c63wpwmn3r7yu5lsf4d0vnwisi67oc6z')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 2; args=(2,)
+(0.000) SELECT "main_category"."name" FROM "main_category" INNER JOIN "main_category_users" ON ("main_category"."name" = "main_category_users"."category_id") WHERE "main_category_users"."customuser_id" = 2; args=(2,)
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" INNER JOIN "main_category_users" ON ("main_customuser"."id" = "main_category_users"."customuser_id") WHERE "main_category_users"."category_id" = 'night_person'; args=('night_person',)
+Internal Server Error: /main/dashboard/
+Traceback (most recent call last):
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/daniellee/miniconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py", line 36, in dashboard
+    return HttpResponse(find_triadic_closures(user))
+  File "/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/algos.py", line 10, in find_triadic_closures
+    usersMap.update(user, 1)
+TypeError: update expected at most 1 arguments, got 2
+"GET /main/dashboard/ HTTP/1.1" 500 65521
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/algos.py. is_changed: False, is_new: True
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/algos.py previous mtime: None, current mtime: 1557174046.2951577
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/algos.py notified as changed. Signal results: [(<function translation_file_changed at 0x108195620>, None)].
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/algos.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/locale with glob **/*.mo.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/algos.py. is_changed: False, is_new: True
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/algos.py previous mtime: None, current mtime: 1557174050.901444
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/algos.py notified as changed. Signal results: [(<function translation_file_changed at 0x10d629620>, None)].
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/algos.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/locale with glob **/*.mo.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:20:56.228164' AND "django_session"."session_key" = 'c63wpwmn3r7yu5lsf4d0vnwisi67oc6z'); args=('2019-05-06 20:20:56.228164', 'c63wpwmn3r7yu5lsf4d0vnwisi67oc6z')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 2; args=(2,)
+"GET / HTTP/1.1" 200 252
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:20:58.125147' AND "django_session"."session_key" = 'c63wpwmn3r7yu5lsf4d0vnwisi67oc6z'); args=('2019-05-06 20:20:58.125147', 'c63wpwmn3r7yu5lsf4d0vnwisi67oc6z')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 2; args=(2,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'c63wpwmn3r7yu5lsf4d0vnwisi67oc6z'; args=('c63wpwmn3r7yu5lsf4d0vnwisi67oc6z',)
+(0.004) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('c63wpwmn3r7yu5lsf4d0vnwisi67oc6z'); args=('c63wpwmn3r7yu5lsf4d0vnwisi67oc6z',)
+"GET /main/logout/ HTTP/1.1" 302 0
+"GET /main/homepage/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 300
+"GET /main/login/ HTTP/1.1" 200 652
+(0.001) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."username" = 'laniel'; args=('laniel',)
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'nswl4kgtt5d66x9jqudsxexyev5zd9o8'  LIMIT 1; args=('nswl4kgtt5d66x9jqudsxexyev5zd9o8',)
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'nswl4kgtt5d66x9jqudsxexyev5zd9o8', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 20:21:00.070922'; args=('nswl4kgtt5d66x9jqudsxexyev5zd9o8', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 20:21:00.070922')
+(0.001) UPDATE "main_customuser" SET "last_login" = '2019-05-06 20:21:00.076968' WHERE "main_customuser"."id" = 2; args=('2019-05-06 20:21:00.076968', 2)
+(0.000) BEGIN; args=None
+(0.000) UPDATE "django_session" SET "session_data" = 'MGMwMjMxMjE2MzQ4NDVlYmQ3Njk5MmQ1MGFjYjgxMWUzODQ1ZThkOTp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyNzc0MDBmNTI3MjdlZTU3YTE0MGJlNjExODQ1ZmYwOTEwZGY3MThjIn0=', "expire_date" = '2019-05-20 20:21:00.080853' WHERE "django_session"."session_key" = 'nswl4kgtt5d66x9jqudsxexyev5zd9o8'; args=('MGMwMjMxMjE2MzQ4NDVlYmQ3Njk5MmQ1MGFjYjgxMWUzODQ1ZThkOTp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyNzc0MDBmNTI3MjdlZTU3YTE0MGJlNjExODQ1ZmYwOTEwZGY3MThjIn0=', '2019-05-20 20:21:00.080853', 'nswl4kgtt5d66x9jqudsxexyev5zd9o8')
+"POST /main/login/ HTTP/1.1" 302 0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:21:00.088270' AND "django_session"."session_key" = 'nswl4kgtt5d66x9jqudsxexyev5zd9o8'); args=('2019-05-06 20:21:00.088270', 'nswl4kgtt5d66x9jqudsxexyev5zd9o8')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 2; args=(2,)
+(0.000) SELECT "main_category_users"."id", "main_category_users"."category_id", "main_category_users"."customuser_id" FROM "main_category_users" WHERE "main_category_users"."customuser_id" = 2; args=(2,)
+"GET /main/homepage/ HTTP/1.1" 302 0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:21:00.101063' AND "django_session"."session_key" = 'nswl4kgtt5d66x9jqudsxexyev5zd9o8'); args=('2019-05-06 20:21:00.101063', 'nswl4kgtt5d66x9jqudsxexyev5zd9o8')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 2; args=(2,)
+(0.000) SELECT "main_category"."name" FROM "main_category" INNER JOIN "main_category_users" ON ("main_category"."name" = "main_category_users"."category_id") WHERE "main_category_users"."customuser_id" = 2; args=(2,)
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" INNER JOIN "main_category_users" ON ("main_customuser"."id" = "main_category_users"."customuser_id") WHERE "main_category_users"."category_id" = 'night_person'; args=('night_person',)
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" INNER JOIN "main_category_users" ON ("main_customuser"."id" = "main_category_users"."customuser_id") WHERE "main_category_users"."category_id" = 'no_substances'; args=('no_substances',)
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" INNER JOIN "main_category_users" ON ("main_customuser"."id" = "main_category_users"."customuser_id") WHERE "main_category_users"."category_id" = 'seas'; args=('seas',)
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" INNER JOIN "main_category_users" ON ("main_customuser"."id" = "main_category_users"."customuser_id") WHERE "main_category_users"."category_id" = 'tennis'; args=('tennis',)
+"GET /main/dashboard/ HTTP/1.1" 200 10
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py. is_changed: False, is_new: True
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py previous mtime: None, current mtime: 1557174119.8620453
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py notified as changed. Signal results: [(<function translation_file_changed at 0x10a824620>, None)].
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/locale with glob **/*.mo.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:22:03.271074' AND "django_session"."session_key" = 'nswl4kgtt5d66x9jqudsxexyev5zd9o8'); args=('2019-05-06 20:22:03.271074', 'nswl4kgtt5d66x9jqudsxexyev5zd9o8')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 2; args=(2,)
+(0.000) SELECT "main_category"."name" FROM "main_category" INNER JOIN "main_category_users" ON ("main_category"."name" = "main_category_users"."category_id") WHERE "main_category_users"."customuser_id" = 2; args=(2,)
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" INNER JOIN "main_category_users" ON ("main_customuser"."id" = "main_category_users"."customuser_id") WHERE "main_category_users"."category_id" = 'night_person'; args=('night_person',)
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" INNER JOIN "main_category_users" ON ("main_customuser"."id" = "main_category_users"."customuser_id") WHERE "main_category_users"."category_id" = 'no_substances'; args=('no_substances',)
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" INNER JOIN "main_category_users" ON ("main_customuser"."id" = "main_category_users"."customuser_id") WHERE "main_category_users"."category_id" = 'seas'; args=('seas',)
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" INNER JOIN "main_category_users" ON ("main_customuser"."id" = "main_category_users"."customuser_id") WHERE "main_category_users"."category_id" = 'tennis'; args=('tennis',)
+"GET /main/dashboard/ HTTP/1.1" 200 29
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py. is_changed: False, is_new: True
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py previous mtime: None, current mtime: 1557174321.4971695
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py notified as changed. Signal results: [(<function translation_file_changed at 0x102b8a620>, None)].
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/locale with glob **/*.mo.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py. is_changed: False, is_new: True
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py previous mtime: None, current mtime: 1557174356.345013
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py notified as changed. Signal results: [(<function translation_file_changed at 0x10e5f9620>, None)].
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/locale with glob **/*.mo.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py. is_changed: False, is_new: True
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py previous mtime: None, current mtime: 1557174362.768385
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py notified as changed. Signal results: [(<function translation_file_changed at 0x10bf75620>, None)].
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/locale with glob **/*.mo.
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py. is_changed: False, is_new: True
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py previous mtime: None, current mtime: 1557174379.2544503
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py notified as changed. Signal results: [(<function translation_file_changed at 0x10649e620>, None)].
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/locale with glob **/*.mo.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py. is_changed: False, is_new: True
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py previous mtime: None, current mtime: 1557174396.4998507
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py notified as changed. Signal results: [(<function translation_file_changed at 0x1101b0620>, None)].
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/locale with glob **/*.mo.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py. is_changed: False, is_new: True
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py previous mtime: None, current mtime: 1557174399.3566282
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py notified as changed. Signal results: [(<function translation_file_changed at 0x10ccba620>, None)].
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/locale with glob **/*.mo.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:26:41.652489' AND "django_session"."session_key" = 'nswl4kgtt5d66x9jqudsxexyev5zd9o8'); args=('2019-05-06 20:26:41.652489', 'nswl4kgtt5d66x9jqudsxexyev5zd9o8')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 2; args=(2,)
+(0.000) SELECT "main_category"."name" FROM "main_category" INNER JOIN "main_category_users" ON ("main_category"."name" = "main_category_users"."category_id") WHERE "main_category_users"."customuser_id" = 2; args=(2,)
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" INNER JOIN "main_category_users" ON ("main_customuser"."id" = "main_category_users"."customuser_id") WHERE "main_category_users"."category_id" = 'night_person'; args=('night_person',)
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" INNER JOIN "main_category_users" ON ("main_customuser"."id" = "main_category_users"."customuser_id") WHERE "main_category_users"."category_id" = 'no_substances'; args=('no_substances',)
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" INNER JOIN "main_category_users" ON ("main_customuser"."id" = "main_category_users"."customuser_id") WHERE "main_category_users"."category_id" = 'seas'; args=('seas',)
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" INNER JOIN "main_category_users" ON ("main_customuser"."id" = "main_category_users"."customuser_id") WHERE "main_category_users"."category_id" = 'tennis'; args=('tennis',)
+"GET /main/dashboard/ HTTP/1.1" 200 9
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:26:45.514851' AND "django_session"."session_key" = 'nswl4kgtt5d66x9jqudsxexyev5zd9o8'); args=('2019-05-06 20:26:45.514851', 'nswl4kgtt5d66x9jqudsxexyev5zd9o8')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 2; args=(2,)
+"GET / HTTP/1.1" 200 252
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:26:47.348902' AND "django_session"."session_key" = 'nswl4kgtt5d66x9jqudsxexyev5zd9o8'); args=('2019-05-06 20:26:47.348902', 'nswl4kgtt5d66x9jqudsxexyev5zd9o8')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 2; args=(2,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'nswl4kgtt5d66x9jqudsxexyev5zd9o8'; args=('nswl4kgtt5d66x9jqudsxexyev5zd9o8',)
+(0.002) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('nswl4kgtt5d66x9jqudsxexyev5zd9o8'); args=('nswl4kgtt5d66x9jqudsxexyev5zd9o8',)
+"GET /main/logout/ HTTP/1.1" 302 0
+"GET /main/homepage/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 300
+"GET /main/signup/ HTTP/1.1" 200 1525
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 1819
+(0.001) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."username" = 'daniel'; args=('daniel',)
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'hlbpbdbe2tg97qxqtntl00zver9cfh1q'  LIMIT 1; args=('hlbpbdbe2tg97qxqtntl00zver9cfh1q',)
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'hlbpbdbe2tg97qxqtntl00zver9cfh1q', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 20:27:01.493163'; args=('hlbpbdbe2tg97qxqtntl00zver9cfh1q', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 20:27:01.493163')
+(0.001) UPDATE "main_customuser" SET "last_login" = '2019-05-06 20:27:01.498467' WHERE "main_customuser"."id" = 3; args=('2019-05-06 20:27:01.498467', 3)
+(0.000) BEGIN; args=None
+(0.000) UPDATE "django_session" SET "session_data" = 'MDc4ZDhhMTY2OWI2MTZiODMxY2NjNTM0ZWE4ZTkwNGIzM2E1ZGFlOTp7Il9hdXRoX3VzZXJfaWQiOiIzIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIxN2YwZWMzMmI1NjE3NTc3N2NlMjg1MWY1YjY4YmY4NzAyZDY4Mjg0In0=', "expire_date" = '2019-05-20 20:27:01.501691' WHERE "django_session"."session_key" = 'hlbpbdbe2tg97qxqtntl00zver9cfh1q'; args=('MDc4ZDhhMTY2OWI2MTZiODMxY2NjNTM0ZWE4ZTkwNGIzM2E1ZGFlOTp7Il9hdXRoX3VzZXJfaWQiOiIzIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIxN2YwZWMzMmI1NjE3NTc3N2NlMjg1MWY1YjY4YmY4NzAyZDY4Mjg0In0=', '2019-05-20 20:27:01.501691', 'hlbpbdbe2tg97qxqtntl00zver9cfh1q')
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:27:01.509658' AND "django_session"."session_key" = 'hlbpbdbe2tg97qxqtntl00zver9cfh1q'); args=('2019-05-06 20:27:01.509658', 'hlbpbdbe2tg97qxqtntl00zver9cfh1q')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 3; args=(3,)
+(0.001) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "main_customuser" ON ("django_admin_log"."user_id" = "main_customuser"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 3 ORDER BY "django_admin_log"."action_time" DESC  LIMIT 10; args=(3,)
+"GET /admin/ HTTP/1.1" 200 5275
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:27:03.451537' AND "django_session"."session_key" = 'hlbpbdbe2tg97qxqtntl00zver9cfh1q'); args=('2019-05-06 20:27:03.451537', 'hlbpbdbe2tg97qxqtntl00zver9cfh1q')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 3; args=(3,)
+(0.000) SELECT "auth_group"."id", "auth_group"."name" FROM "auth_group" ORDER BY "auth_group"."name" ASC; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "main_customuser"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "main_customuser"; args=()
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" ORDER BY "main_customuser"."username" ASC; args=()
+"GET /admin/main/customuser/ HTTP/1.1" 200 7056
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:27:03.667803' AND "django_session"."session_key" = 'hlbpbdbe2tg97qxqtntl00zver9cfh1q'); args=('2019-05-06 20:27:03.667803', 'hlbpbdbe2tg97qxqtntl00zver9cfh1q')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 3; args=(3,)
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:27:06.645884' AND "django_session"."session_key" = 'hlbpbdbe2tg97qxqtntl00zver9cfh1q'); args=('2019-05-06 20:27:06.645884', 'hlbpbdbe2tg97qxqtntl00zver9cfh1q')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 3; args=(3,)
+(0.000) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "main_customuser" ON ("django_admin_log"."user_id" = "main_customuser"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 3 ORDER BY "django_admin_log"."action_time" DESC  LIMIT 10; args=(3,)
+"GET /admin/ HTTP/1.1" 200 5275
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:27:07.704137' AND "django_session"."session_key" = 'hlbpbdbe2tg97qxqtntl00zver9cfh1q'); args=('2019-05-06 20:27:07.704137', 'hlbpbdbe2tg97qxqtntl00zver9cfh1q')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 3; args=(3,)
+(0.000) SELECT COUNT(*) AS "__count" FROM "main_category"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "main_category"; args=()
+(0.000) SELECT "main_category"."name" FROM "main_category" ORDER BY "main_category"."name" DESC; args=()
+"GET /admin/main/category/ HTTP/1.1" 200 6177
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:27:07.771104' AND "django_session"."session_key" = 'hlbpbdbe2tg97qxqtntl00zver9cfh1q'); args=('2019-05-06 20:27:07.771104', 'hlbpbdbe2tg97qxqtntl00zver9cfh1q')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 3; args=(3,)
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:27:08.683176' AND "django_session"."session_key" = 'hlbpbdbe2tg97qxqtntl00zver9cfh1q'); args=('2019-05-06 20:27:08.683176', 'hlbpbdbe2tg97qxqtntl00zver9cfh1q')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 3; args=(3,)
+(0.000) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "main_customuser" ON ("django_admin_log"."user_id" = "main_customuser"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 3 ORDER BY "django_admin_log"."action_time" DESC  LIMIT 10; args=(3,)
+"GET /admin/ HTTP/1.1" 200 5275
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:27:09.311072' AND "django_session"."session_key" = 'hlbpbdbe2tg97qxqtntl00zver9cfh1q'); args=('2019-05-06 20:27:09.311072', 'hlbpbdbe2tg97qxqtntl00zver9cfh1q')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 3; args=(3,)
+(0.000) SELECT COUNT(*) AS "__count" FROM "main_category"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "main_category"; args=()
+(0.000) SELECT "main_category"."name" FROM "main_category" ORDER BY "main_category"."name" DESC; args=()
+"GET /admin/main/category/ HTTP/1.1" 200 6177
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:27:16.293832' AND "django_session"."session_key" = 'hlbpbdbe2tg97qxqtntl00zver9cfh1q'); args=('2019-05-06 20:27:16.293832', 'hlbpbdbe2tg97qxqtntl00zver9cfh1q')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 3; args=(3,)
+(0.000) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "main_customuser" ON ("django_admin_log"."user_id" = "main_customuser"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 3 ORDER BY "django_admin_log"."action_time" DESC  LIMIT 10; args=(3,)
+"GET /admin/ HTTP/1.1" 200 5275
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:27:17.505534' AND "django_session"."session_key" = 'hlbpbdbe2tg97qxqtntl00zver9cfh1q'); args=('2019-05-06 20:27:17.505534', 'hlbpbdbe2tg97qxqtntl00zver9cfh1q')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 3; args=(3,)
+"GET /admin/login/?next=/admin/ HTTP/1.1" 302 0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:27:17.517202' AND "django_session"."session_key" = 'hlbpbdbe2tg97qxqtntl00zver9cfh1q'); args=('2019-05-06 20:27:17.517202', 'hlbpbdbe2tg97qxqtntl00zver9cfh1q')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 3; args=(3,)
+(0.000) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "main_customuser" ON ("django_admin_log"."user_id" = "main_customuser"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 3 ORDER BY "django_admin_log"."action_time" DESC  LIMIT 10; args=(3,)
+"GET /admin/ HTTP/1.1" 200 5275
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:27:18.599946' AND "django_session"."session_key" = 'hlbpbdbe2tg97qxqtntl00zver9cfh1q'); args=('2019-05-06 20:27:18.599946', 'hlbpbdbe2tg97qxqtntl00zver9cfh1q')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 3; args=(3,)
+"GET / HTTP/1.1" 200 252
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:27:20.113582' AND "django_session"."session_key" = 'hlbpbdbe2tg97qxqtntl00zver9cfh1q'); args=('2019-05-06 20:27:20.113582', 'hlbpbdbe2tg97qxqtntl00zver9cfh1q')
+(0.001) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 3; args=(3,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'hlbpbdbe2tg97qxqtntl00zver9cfh1q'; args=('hlbpbdbe2tg97qxqtntl00zver9cfh1q',)
+(0.004) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('hlbpbdbe2tg97qxqtntl00zver9cfh1q'); args=('hlbpbdbe2tg97qxqtntl00zver9cfh1q',)
+"GET /main/logout/ HTTP/1.1" 302 0
+"GET /main/homepage/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 300
+"GET /main/login/ HTTP/1.1" 200 652
+"GET /main/signup/ HTTP/1.1" 200 1525
+(0.000) SELECT (1) AS "a" FROM "main_customuser" WHERE "main_customuser"."username" = 'jschmoe'  LIMIT 1; args=('jschmoe',)
+(0.004) INSERT INTO "main_customuser" ("password", "last_login", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined") VALUES ('pbkdf2_sha256$150000$ip0gRuSYHaMR$JCFQmIeeVGNkECjomykaK3kyt341jYdR2bxoc/KNguk=', NULL, 0, 'jschmoe', 'Joe', 'Schmoe', '', 0, 1, '2019-05-06 20:27:35.291258'); args=['pbkdf2_sha256$150000$ip0gRuSYHaMR$JCFQmIeeVGNkECjomykaK3kyt341jYdR2bxoc/KNguk=', None, False, 'jschmoe', 'Joe', 'Schmoe', '', False, True, '2019-05-06 20:27:35.291258']
+"POST /main/signup/ HTTP/1.1" 302 0
+"GET /main/login/ HTTP/1.1" 200 652
+(0.001) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."username" = 'jschmoe'; args=('jschmoe',)
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'ffydcmqmpafgqy9tqxef48myonygl34e'  LIMIT 1; args=('ffydcmqmpafgqy9tqxef48myonygl34e',)
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'ffydcmqmpafgqy9tqxef48myonygl34e', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 20:27:42.665336'; args=('ffydcmqmpafgqy9tqxef48myonygl34e', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 20:27:42.665336')
+(0.001) UPDATE "main_customuser" SET "last_login" = '2019-05-06 20:27:42.670559' WHERE "main_customuser"."id" = 5; args=('2019-05-06 20:27:42.670559', 5)
+(0.000) BEGIN; args=None
+(0.000) UPDATE "django_session" SET "session_data" = 'ZTk3ZWY4Y2E0OWZkZWRkY2JmYTNhMjBjOWRhZDQ4ODAxOTUwZTg2Yjp7Il9hdXRoX3VzZXJfaWQiOiI1IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyZDkyMGM1NTA5NjBiNDdmMmEyNTEzYTI2MDE0ODQ3YjE1YzVmOGZjIn0=', "expire_date" = '2019-05-20 20:27:42.673768' WHERE "django_session"."session_key" = 'ffydcmqmpafgqy9tqxef48myonygl34e'; args=('ZTk3ZWY4Y2E0OWZkZWRkY2JmYTNhMjBjOWRhZDQ4ODAxOTUwZTg2Yjp7Il9hdXRoX3VzZXJfaWQiOiI1IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyZDkyMGM1NTA5NjBiNDdmMmEyNTEzYTI2MDE0ODQ3YjE1YzVmOGZjIn0=', '2019-05-20 20:27:42.673768', 'ffydcmqmpafgqy9tqxef48myonygl34e')
+"POST /main/login/ HTTP/1.1" 302 0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:27:42.680670' AND "django_session"."session_key" = 'ffydcmqmpafgqy9tqxef48myonygl34e'); args=('2019-05-06 20:27:42.680670', 'ffydcmqmpafgqy9tqxef48myonygl34e')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 5; args=(5,)
+(0.000) SELECT "main_category_users"."id", "main_category_users"."category_id", "main_category_users"."customuser_id" FROM "main_category_users" WHERE "main_category_users"."customuser_id" = 5; args=(5,)
+(0.000) SELECT COUNT(*) AS "__count" FROM "main_category" INNER JOIN "main_category_users" ON ("main_category"."name" = "main_category_users"."category_id") WHERE "main_category_users"."customuser_id" = 5; args=(5,)
+"GET /main/homepage/ HTTP/1.1" 302 0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:27:42.692840' AND "django_session"."session_key" = 'ffydcmqmpafgqy9tqxef48myonygl34e'); args=('2019-05-06 20:27:42.692840', 'ffydcmqmpafgqy9tqxef48myonygl34e')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 5; args=(5,)
+"GET /main/survey/ HTTP/1.1" 200 1246
+(0.001) SELECT "main_category"."name" FROM "main_category" WHERE "main_category"."name" = 'night_person'; args=('night_person',)
+(0.000) SELECT "main_category"."name" FROM "main_category" WHERE "main_category"."name" = 'no_substances'; args=('no_substances',)
+(0.000) SELECT "main_category"."name" FROM "main_category" WHERE "main_category"."name" = 'seas'; args=('seas',)
+(0.000) SELECT "main_category"."name" FROM "main_category" WHERE "main_category"."name" = 'football'; args=('football',)
+(0.000) SELECT (1) AS "a" FROM "main_category" WHERE "main_category"."name" = 'football'  LIMIT 1; args=('football',)
+(0.004) INSERT INTO "main_category" ("name") SELECT 'football'; args=('football',)
+(0.000) BEGIN; args=None
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:27:52.389003' AND "django_session"."session_key" = 'ffydcmqmpafgqy9tqxef48myonygl34e'); args=('2019-05-06 20:27:52.389003', 'ffydcmqmpafgqy9tqxef48myonygl34e')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 5; args=(5,)
+(0.000) SELECT "main_category_users"."customuser_id" FROM "main_category_users" WHERE ("main_category_users"."category_id" = 'night_person' AND "main_category_users"."customuser_id" IN (5)); args=('night_person', 5)
+(0.001) INSERT INTO "main_category_users" ("category_id", "customuser_id") SELECT 'night_person', 5; args=('night_person', 5)
+(0.000) BEGIN; args=None
+(0.000) SELECT "main_category_users"."customuser_id" FROM "main_category_users" WHERE ("main_category_users"."category_id" = 'no_substances' AND "main_category_users"."customuser_id" IN (5)); args=('no_substances', 5)
+(0.000) INSERT INTO "main_category_users" ("category_id", "customuser_id") SELECT 'no_substances', 5; args=('no_substances', 5)
+(0.000) BEGIN; args=None
+(0.000) SELECT "main_category_users"."customuser_id" FROM "main_category_users" WHERE ("main_category_users"."category_id" = 'seas' AND "main_category_users"."customuser_id" IN (5)); args=('seas', 5)
+(0.001) INSERT INTO "main_category_users" ("category_id", "customuser_id") SELECT 'seas', 5; args=('seas', 5)
+(0.000) BEGIN; args=None
+(0.000) SELECT "main_category_users"."customuser_id" FROM "main_category_users" WHERE ("main_category_users"."category_id" = 'football' AND "main_category_users"."customuser_id" IN (5)); args=('football', 5)
+(0.000) INSERT INTO "main_category_users" ("category_id", "customuser_id") SELECT 'football', 5; args=('football', 5)
+"POST /main/survey/ HTTP/1.1" 302 0
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:27:52.415456' AND "django_session"."session_key" = 'ffydcmqmpafgqy9tqxef48myonygl34e'); args=('2019-05-06 20:27:52.415456', 'ffydcmqmpafgqy9tqxef48myonygl34e')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 5; args=(5,)
+"GET / HTTP/1.1" 200 253
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:28:35.237845' AND "django_session"."session_key" = 'ffydcmqmpafgqy9tqxef48myonygl34e'); args=('2019-05-06 20:28:35.237845', 'ffydcmqmpafgqy9tqxef48myonygl34e')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 5; args=(5,)
+"GET / HTTP/1.1" 200 253
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:28:36.014763' AND "django_session"."session_key" = 'ffydcmqmpafgqy9tqxef48myonygl34e'); args=('2019-05-06 20:28:36.014763', 'ffydcmqmpafgqy9tqxef48myonygl34e')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 5; args=(5,)
+"GET / HTTP/1.1" 200 253
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:28:37.197522' AND "django_session"."session_key" = 'ffydcmqmpafgqy9tqxef48myonygl34e'); args=('2019-05-06 20:28:37.197522', 'ffydcmqmpafgqy9tqxef48myonygl34e')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 5; args=(5,)
+"GET / HTTP/1.1" 200 253
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py. is_changed: False, is_new: True
+File /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py previous mtime: None, current mtime: 1557174568.5831828
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py notified as changed. Signal results: [(<function translation_file_changed at 0x10ecb1620>, None)].
+/Users/daniellee/College/NETS 150/final_project/roomatesearch/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /Users/daniellee/miniconda3/lib/python3.6/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /Users/daniellee/College/NETS 150/final_project/roomatesearch/main/locale with glob **/*.mo.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:29:31.202335' AND "django_session"."session_key" = 'ffydcmqmpafgqy9tqxef48myonygl34e'); args=('2019-05-06 20:29:31.202335', 'ffydcmqmpafgqy9tqxef48myonygl34e')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 5; args=(5,)
+"GET / HTTP/1.1" 200 253
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:29:33.273035' AND "django_session"."session_key" = 'ffydcmqmpafgqy9tqxef48myonygl34e'); args=('2019-05-06 20:29:33.273035', 'ffydcmqmpafgqy9tqxef48myonygl34e')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 5; args=(5,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'ffydcmqmpafgqy9tqxef48myonygl34e'; args=('ffydcmqmpafgqy9tqxef48myonygl34e',)
+(0.001) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('ffydcmqmpafgqy9tqxef48myonygl34e'); args=('ffydcmqmpafgqy9tqxef48myonygl34e',)
+"GET /main/logout/ HTTP/1.1" 302 0
+"GET /main/homepage/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 300
+"GET /main/login/ HTTP/1.1" 200 652
+(0.001) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."username" = 'jschmoe'; args=('jschmoe',)
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'p3blymk8ggv7kln8ux5x1vl25r97zgnt'  LIMIT 1; args=('p3blymk8ggv7kln8ux5x1vl25r97zgnt',)
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'p3blymk8ggv7kln8ux5x1vl25r97zgnt', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 20:29:39.211133'; args=('p3blymk8ggv7kln8ux5x1vl25r97zgnt', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 20:29:39.211133')
+(0.001) UPDATE "main_customuser" SET "last_login" = '2019-05-06 20:29:39.213637' WHERE "main_customuser"."id" = 5; args=('2019-05-06 20:29:39.213637', 5)
+(0.000) BEGIN; args=None
+(0.000) UPDATE "django_session" SET "session_data" = 'ZTk3ZWY4Y2E0OWZkZWRkY2JmYTNhMjBjOWRhZDQ4ODAxOTUwZTg2Yjp7Il9hdXRoX3VzZXJfaWQiOiI1IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyZDkyMGM1NTA5NjBiNDdmMmEyNTEzYTI2MDE0ODQ3YjE1YzVmOGZjIn0=', "expire_date" = '2019-05-20 20:29:39.216087' WHERE "django_session"."session_key" = 'p3blymk8ggv7kln8ux5x1vl25r97zgnt'; args=('ZTk3ZWY4Y2E0OWZkZWRkY2JmYTNhMjBjOWRhZDQ4ODAxOTUwZTg2Yjp7Il9hdXRoX3VzZXJfaWQiOiI1IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyZDkyMGM1NTA5NjBiNDdmMmEyNTEzYTI2MDE0ODQ3YjE1YzVmOGZjIn0=', '2019-05-20 20:29:39.216087', 'p3blymk8ggv7kln8ux5x1vl25r97zgnt')
+"POST /main/login/ HTTP/1.1" 302 0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:29:39.222602' AND "django_session"."session_key" = 'p3blymk8ggv7kln8ux5x1vl25r97zgnt'); args=('2019-05-06 20:29:39.222602', 'p3blymk8ggv7kln8ux5x1vl25r97zgnt')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 5; args=(5,)
+(0.000) SELECT "main_category_users"."id", "main_category_users"."category_id", "main_category_users"."customuser_id" FROM "main_category_users" WHERE "main_category_users"."customuser_id" = 5; args=(5,)
+"GET /main/homepage/ HTTP/1.1" 302 0
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:29:39.234024' AND "django_session"."session_key" = 'p3blymk8ggv7kln8ux5x1vl25r97zgnt'); args=('2019-05-06 20:29:39.234024', 'p3blymk8ggv7kln8ux5x1vl25r97zgnt')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 5; args=(5,)
+(0.000) SELECT "main_category"."name" FROM "main_category" INNER JOIN "main_category_users" ON ("main_category"."name" = "main_category_users"."category_id") WHERE "main_category_users"."customuser_id" = 5; args=(5,)
+(0.001) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" INNER JOIN "main_category_users" ON ("main_customuser"."id" = "main_category_users"."customuser_id") WHERE "main_category_users"."category_id" = 'night_person'; args=('night_person',)
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" INNER JOIN "main_category_users" ON ("main_customuser"."id" = "main_category_users"."customuser_id") WHERE "main_category_users"."category_id" = 'no_substances'; args=('no_substances',)
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" INNER JOIN "main_category_users" ON ("main_customuser"."id" = "main_category_users"."customuser_id") WHERE "main_category_users"."category_id" = 'seas'; args=('seas',)
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" INNER JOIN "main_category_users" ON ("main_customuser"."id" = "main_category_users"."customuser_id") WHERE "main_category_users"."category_id" = 'football'; args=('football',)
+"GET /main/dashboard/ HTTP/1.1" 200 15
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:29:47.596584' AND "django_session"."session_key" = 'p3blymk8ggv7kln8ux5x1vl25r97zgnt'); args=('2019-05-06 20:29:47.596584', 'p3blymk8ggv7kln8ux5x1vl25r97zgnt')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 5; args=(5,)
+"GET / HTTP/1.1" 200 253
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:29:48.553413' AND "django_session"."session_key" = 'p3blymk8ggv7kln8ux5x1vl25r97zgnt'); args=('2019-05-06 20:29:48.553413', 'p3blymk8ggv7kln8ux5x1vl25r97zgnt')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 5; args=(5,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'p3blymk8ggv7kln8ux5x1vl25r97zgnt'; args=('p3blymk8ggv7kln8ux5x1vl25r97zgnt',)
+(0.004) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('p3blymk8ggv7kln8ux5x1vl25r97zgnt'); args=('p3blymk8ggv7kln8ux5x1vl25r97zgnt',)
+"GET /main/logout/ HTTP/1.1" 302 0
+"GET /main/homepage/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 300
+"GET /main/signup/ HTTP/1.1" 200 1525
+(0.001) SELECT (1) AS "a" FROM "main_customuser" WHERE "main_customuser"."username" = 'thiccy'  LIMIT 1; args=('thiccy',)
+(0.004) INSERT INTO "main_customuser" ("password", "last_login", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined") VALUES ('pbkdf2_sha256$150000$jiKwmf98CMsk$wOhUaLRS9EKP39E8ZPlh/ZC/vA2GZRwi2Tt1NVFQJ+k=', NULL, 0, 'thiccy', 'Thicc', 'Thicc', '', 0, 1, '2019-05-06 20:30:08.229574'); args=['pbkdf2_sha256$150000$jiKwmf98CMsk$wOhUaLRS9EKP39E8ZPlh/ZC/vA2GZRwi2Tt1NVFQJ+k=', None, False, 'thiccy', 'Thicc', 'Thicc', '', False, True, '2019-05-06 20:30:08.229574']
+"POST /main/signup/ HTTP/1.1" 302 0
+"GET /main/login/ HTTP/1.1" 200 652
+(0.001) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."username" = 'thiccy'; args=('thiccy',)
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'u6x8nqcnjjhlq4ldq3fddwm1utf3ou8x'  LIMIT 1; args=('u6x8nqcnjjhlq4ldq3fddwm1utf3ou8x',)
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'u6x8nqcnjjhlq4ldq3fddwm1utf3ou8x', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 20:30:14.211447'; args=('u6x8nqcnjjhlq4ldq3fddwm1utf3ou8x', 'ZjA1NDhlNTJiN2UxNGU1MTJlYjM1MDY4Mjk2MjM1NmI2ZmE5OWMyYjp7fQ==', '2019-05-20 20:30:14.211447')
+(0.001) UPDATE "main_customuser" SET "last_login" = '2019-05-06 20:30:14.216662' WHERE "main_customuser"."id" = 6; args=('2019-05-06 20:30:14.216662', 6)
+(0.000) BEGIN; args=None
+(0.000) UPDATE "django_session" SET "session_data" = 'NGMwZTJhMDAzMTVmMTExNGIyZDgyYTcwZTc4MmRkYTQ1Zjc0OGU2MTp7Il9hdXRoX3VzZXJfaWQiOiI2IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJhZDg4NmIxZGNkY2JkNzA3NjQzYmZhYmQ5NGY3YjNiYjcwMjFmODBmIn0=', "expire_date" = '2019-05-20 20:30:14.219473' WHERE "django_session"."session_key" = 'u6x8nqcnjjhlq4ldq3fddwm1utf3ou8x'; args=('NGMwZTJhMDAzMTVmMTExNGIyZDgyYTcwZTc4MmRkYTQ1Zjc0OGU2MTp7Il9hdXRoX3VzZXJfaWQiOiI2IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJhZDg4NmIxZGNkY2JkNzA3NjQzYmZhYmQ5NGY3YjNiYjcwMjFmODBmIn0=', '2019-05-20 20:30:14.219473', 'u6x8nqcnjjhlq4ldq3fddwm1utf3ou8x')
+"POST /main/login/ HTTP/1.1" 302 0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:30:14.226686' AND "django_session"."session_key" = 'u6x8nqcnjjhlq4ldq3fddwm1utf3ou8x'); args=('2019-05-06 20:30:14.226686', 'u6x8nqcnjjhlq4ldq3fddwm1utf3ou8x')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 6; args=(6,)
+(0.000) SELECT "main_category_users"."id", "main_category_users"."category_id", "main_category_users"."customuser_id" FROM "main_category_users" WHERE "main_category_users"."customuser_id" = 6; args=(6,)
+(0.000) SELECT COUNT(*) AS "__count" FROM "main_category" INNER JOIN "main_category_users" ON ("main_category"."name" = "main_category_users"."category_id") WHERE "main_category_users"."customuser_id" = 6; args=(6,)
+"GET /main/homepage/ HTTP/1.1" 302 0
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:30:14.239842' AND "django_session"."session_key" = 'u6x8nqcnjjhlq4ldq3fddwm1utf3ou8x'); args=('2019-05-06 20:30:14.239842', 'u6x8nqcnjjhlq4ldq3fddwm1utf3ou8x')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 6; args=(6,)
+"GET /main/survey/ HTTP/1.1" 200 1245
+(0.001) SELECT "main_category"."name" FROM "main_category" WHERE "main_category"."name" = 'night_person'; args=('night_person',)
+(0.000) SELECT "main_category"."name" FROM "main_category" WHERE "main_category"."name" = 'substances'; args=('substances',)
+(0.000) SELECT "main_category"."name" FROM "main_category" WHERE "main_category"."name" = 'seas'; args=('seas',)
+(0.000) SELECT "main_category"."name" FROM "main_category" WHERE "main_category"."name" = 'football'; args=('football',)
+(0.000) BEGIN; args=None
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:30:23.019458' AND "django_session"."session_key" = 'u6x8nqcnjjhlq4ldq3fddwm1utf3ou8x'); args=('2019-05-06 20:30:23.019458', 'u6x8nqcnjjhlq4ldq3fddwm1utf3ou8x')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 6; args=(6,)
+(0.000) SELECT "main_category_users"."customuser_id" FROM "main_category_users" WHERE ("main_category_users"."category_id" = 'night_person' AND "main_category_users"."customuser_id" IN (6)); args=('night_person', 6)
+(0.001) INSERT INTO "main_category_users" ("category_id", "customuser_id") SELECT 'night_person', 6; args=('night_person', 6)
+(0.000) BEGIN; args=None
+(0.000) SELECT "main_category_users"."customuser_id" FROM "main_category_users" WHERE ("main_category_users"."category_id" = 'substances' AND "main_category_users"."customuser_id" IN (6)); args=('substances', 6)
+(0.001) INSERT INTO "main_category_users" ("category_id", "customuser_id") SELECT 'substances', 6; args=('substances', 6)
+(0.000) BEGIN; args=None
+(0.000) SELECT "main_category_users"."customuser_id" FROM "main_category_users" WHERE ("main_category_users"."category_id" = 'seas' AND "main_category_users"."customuser_id" IN (6)); args=('seas', 6)
+(0.001) INSERT INTO "main_category_users" ("category_id", "customuser_id") SELECT 'seas', 6; args=('seas', 6)
+(0.000) BEGIN; args=None
+(0.000) SELECT "main_category_users"."customuser_id" FROM "main_category_users" WHERE ("main_category_users"."category_id" = 'football' AND "main_category_users"."customuser_id" IN (6)); args=('football', 6)
+(0.001) INSERT INTO "main_category_users" ("category_id", "customuser_id") SELECT 'football', 6; args=('football', 6)
+"POST /main/survey/ HTTP/1.1" 302 0
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:30:23.046595' AND "django_session"."session_key" = 'u6x8nqcnjjhlq4ldq3fddwm1utf3ou8x'); args=('2019-05-06 20:30:23.046595', 'u6x8nqcnjjhlq4ldq3fddwm1utf3ou8x')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 6; args=(6,)
+(0.000) SELECT "main_category_users"."id", "main_category_users"."category_id", "main_category_users"."customuser_id" FROM "main_category_users" WHERE "main_category_users"."customuser_id" = 6; args=(6,)
+"GET /main/homepage/ HTTP/1.1" 302 0
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:30:23.056484' AND "django_session"."session_key" = 'u6x8nqcnjjhlq4ldq3fddwm1utf3ou8x'); args=('2019-05-06 20:30:23.056484', 'u6x8nqcnjjhlq4ldq3fddwm1utf3ou8x')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 6; args=(6,)
+(0.000) SELECT "main_category"."name" FROM "main_category" INNER JOIN "main_category_users" ON ("main_category"."name" = "main_category_users"."category_id") WHERE "main_category_users"."customuser_id" = 6; args=(6,)
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" INNER JOIN "main_category_users" ON ("main_customuser"."id" = "main_category_users"."customuser_id") WHERE "main_category_users"."category_id" = 'night_person'; args=('night_person',)
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" INNER JOIN "main_category_users" ON ("main_customuser"."id" = "main_category_users"."customuser_id") WHERE "main_category_users"."category_id" = 'substances'; args=('substances',)
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" INNER JOIN "main_category_users" ON ("main_customuser"."id" = "main_category_users"."customuser_id") WHERE "main_category_users"."category_id" = 'seas'; args=('seas',)
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" INNER JOIN "main_category_users" ON ("main_customuser"."id" = "main_category_users"."customuser_id") WHERE "main_category_users"."category_id" = 'football'; args=('football',)
+"GET /main/dashboard/ HTTP/1.1" 200 29
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-06 20:30:34.069679' AND "django_session"."session_key" = 'u6x8nqcnjjhlq4ldq3fddwm1utf3ou8x'); args=('2019-05-06 20:30:34.069679', 'u6x8nqcnjjhlq4ldq3fddwm1utf3ou8x')
+(0.000) SELECT "main_customuser"."id", "main_customuser"."password", "main_customuser"."last_login", "main_customuser"."is_superuser", "main_customuser"."username", "main_customuser"."first_name", "main_customuser"."last_name", "main_customuser"."email", "main_customuser"."is_staff", "main_customuser"."is_active", "main_customuser"."date_joined" FROM "main_customuser" WHERE "main_customuser"."id" = 6; args=(6,)
+"GET / HTTP/1.1" 200 252
