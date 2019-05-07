@@ -50,6 +50,7 @@ def roommate_survey(request):
             form.process(request.user)
             return redirect('homepage')
     # otherwise, it's a get request so get the form
+    else:
+        form = RoommateSurveyForm
     user = request.user
-    form = RoommateSurveyForm
     return render(request, 'homepage.html', {'form': form, 'user': user})

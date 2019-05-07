@@ -11,3 +11,6 @@ class Category(models.Model):
 	name = models.CharField(max_length=50, primary_key=True)
 	users = models.ManyToManyField(CustomUser)
 
+class Group(models.Model):
+	name = models.CharField(max_length=50, primary_key=True)
+	users = models.ManyToManyField(CustomUser)
