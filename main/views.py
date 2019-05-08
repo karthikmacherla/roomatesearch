@@ -6,12 +6,16 @@ from django.http import HttpResponseRedirect
 from django.http import HttpResponse
 from django.shortcuts import redirect
 from django.db.models.query import EmptyQuerySet
+from django.contrib.auth import logout
 
 from .forms import CustomUserCreationForm
 from .forms import RoommateSurveyForm
 
 from .algos import find_triadic_closures
 
+
+# constant for threshold for recommending someone
+MATCH_THRESHOLD = 3
 
 # Create your views here.
 
@@ -33,13 +37,15 @@ def homepage(request):
 
 def dashboard(request):
     user = request.user
+    # case 1: this person's in a group
+    if user.group_set.count() > 0:
+        group = list(user.group_set.all())[0] # get group this user is in
+        return render(request, 'homepage.html', {'group': group, 'user': user})
     # get map data
     matches = find_triadic_closures(user)
-    l = []
-    for user, count in matches.items():
-        l.append(user.first_name + " ")
-        l.append(str(count) + "\n")
-    return HttpResponse(''.join(l))
+    # filter matches based on threshold
+    filtered = {k: v for k,v in matches.items() if v >= MATCH_THRESHOLD and k != user}
+    return render(request, 'homepage.html', {'matches': filtered, 'user': user})
 
 
 def roommate_survey(request):
@@ -54,3 +60,12 @@ def roommate_survey(request):
         form = RoommateSurveyForm
     user = request.user
     return render(request, 'homepage.html', {'form': form, 'user': user})
+
+
+def logout_view(request):
+    logout(request)
+    return redirect('homepage')
+
+def match_view(request):
+    user = request.user
+    group = list(user.group_set.all())[0] # get group this user is in

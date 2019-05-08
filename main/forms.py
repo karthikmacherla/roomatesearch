@@ -20,7 +20,7 @@ class CustomUserChangeForm(UserChangeForm):
 
 class RoommateSurveyForm(forms.Form):
     night_person = forms.BooleanField(label="Are you a night owl?", required=False)
-    substances = forms.BooleanField(label="Do you partake in substances?")
+    substances = forms.BooleanField(label="Do you partake in substances?", required=False)
 
     penn_college = forms.ChoiceField(choices=[
         ('seas', "Engineering"),
@@ -111,7 +111,8 @@ class RoommateSurveyForm(forms.Form):
             objects.append(groups.get(pk=data['join_group']))
         elif data['create_group'] != None:
             groups = Group.objects
-            objects.append(Group(name=data['create_group']))
+            new_group = Group(name=data['create_group'], owner=user)
+            objects.append(new_group)
         
         for obj in objects:
             obj.save()
