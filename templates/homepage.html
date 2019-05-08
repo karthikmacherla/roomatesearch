@@ -4,7 +4,7 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-{% if user.is_authenticated %}
+{% if user.category_set.count == 0 %}
   Hi {{ user.username }}!
   <form method="post">
     {% csrf_token %}
@@ -12,8 +12,25 @@
   <button type="submit">Submit</button>
 </form>
 {% else %}
-  <p>You are not logged in</p>
-  <a href="{% url 'login' %}">login</a> |
-  <a href="{% url 'signup' %}">signup</a>
+  <h1 class='title'>Welcome back {{ user.username }}!</h2>
+  {% if not group %}
+    <h2 class='subtitle'>Here are some matches we've found for you</h2>
+    {% for match, tcs in matches.items %}
+      <p>{{ match.first_name }}: {{ tcs }} focal closures</p>
+    {% endfor %}
+  {% else %}
+    <h2 class='subtitle'>Here's everyone in {{ group.name }}</h2>
+    {% for member in group.users.all %}
+      <p>{{ member }}</p>
+    {% endfor %}
+    {% if group.owner == user %}
+      <h2 class='is-size-4'>You're the admin! Click the button to match!</h2>
+      <a href="{% url 'match' %}"><button>Match</button></a>
+    {% else %}
+      <h2 class='subtitle'>We're just waiting on admin to match everyone now!</h2>
+    {% endif %}
+  {% endif %}
 {% endif %}
+
+<a href="{% url 'logout' %}"><button>Logout</button></a>
 {% endblock %}
