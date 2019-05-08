@@ -6,6 +6,11 @@ from .models import Group
 from django.core.exceptions import ObjectDoesNotExist
 from django.core.exceptions import ValidationError
 
+"""
+ Forms that are presented at the login and sign up screens
+
+"""
+
 class CustomUserCreationForm(UserCreationForm):
 
 	class Meta(UserCreationForm):
@@ -18,9 +23,24 @@ class CustomUserChangeForm(UserChangeForm):
         model = CustomUser
         fields = ('username', 'email')
 
+"""
+ Form that allows the user to emphasize qualities of their personality. 
+ This is the roomate survey rendered to the user. 
+"""
 class RoommateSurveyForm(forms.Form):
     night_person = forms.BooleanField(label="Are you a night owl?", required=False)
     substances = forms.BooleanField(label="Do you partake in substances?", required=False)
+    rushing = forms.BooleanField(label = "Do you plan on rushing?", required=False)
+
+    show_that_best_describes_you = forms.ChoiceField(choices = [
+        ('friends', "Friends"), 
+        ('GOT', "Game of Thrones"), 
+        ('anime', "Naruto/Bleach/One Piece"),
+        ('blackmirror', "Black Mirror"), 
+        ('svalley', "Silicon Valley"),
+        ('gg', 'Gossip Girl'), 
+        ('na', "None of the Above")
+    ])
 
     penn_college = forms.ChoiceField(choices=[
         ('seas', "Engineering"),
@@ -35,6 +55,8 @@ class RoommateSurveyForm(forms.Form):
         ('football', "Football"),
         ('hockey', "Hockey")
     ])
+
+    competitive = forms.BooleanField(label="Are you competitive?", required=False)
 
     
     # get the choices
@@ -70,6 +92,8 @@ class RoommateSurveyForm(forms.Form):
         
         return form_data
 
+    # returns the object pointing to the specific 
+    # choice for a category
 
     def helper_get_category(self, objects, key):
         try:
@@ -80,6 +104,9 @@ class RoommateSurveyForm(forms.Form):
             obj.save()
             return obj
 
+    # fetches the object pointing to a group determined by 
+    # group name
+
     def helper_get_group(self, objects, key):
         try:
             obj = objects.get(pk=key)
@@ -87,6 +114,10 @@ class RoommateSurveyForm(forms.Form):
         except ObjectDoesNotExist:
             obj = Group(name=key)
             return obj
+
+    # After a user fills out the form, this function will add 
+    # add this user to the appropriate groups. Essentially adding 
+    # edges from the user to the foci (category).
 
     def process(self, user):
         data = self.cleaned_data
@@ -104,10 +135,21 @@ class RoommateSurveyForm(forms.Form):
         else:
             objects.append(self.helper_get_category(categories, 'no_substances'))
 
+        if data['rushing']:
+            objects.append(self.helper_get_category(categories, 'rushing'))
+        else:
+            objects.append(self.helper_get_category(categories, 'not_rushing'))
+
+        if data['competitive']:
+            objects.append(self.helper_get_category(categories, 'competitive'))
+        else:
+            objects.append(self.helper_get_category(categories, 'not_competitve'))
         
         objects.append(self.helper_get_category(categories, data['penn_college']))
 
         objects.append(self.helper_get_category(categories, data['sport']))
+
+        objects.append(self.helper_get_category(categories, data['show_that_best_describes_you']))
         
         if data['join_group'] != None:
             groups = Group.objects

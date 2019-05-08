@@ -1,6 +1,12 @@
 import random
 from .models import Pair
 
+# This algorithm finds the number of focal closures between a user
+# and the rest of the users on the server.
+# Algo: Runs BFS and finds all vertices that are 2 away (since the graph 
+# bipartite). Vertices that are two away on multiple paths (i.e. multiple triadic
+# closures) will recieve higher numbers in the map we return. 
+
 def find_triadic_closures(user):
     queryset = user.category_set.all()
     usersMap = dict()
