@@ -12,6 +12,8 @@ from .forms import CustomUserCreationForm
 from .forms import RoommateSurveyForm
 
 from .algos import find_triadic_closures
+from .algos import pair_group
+from .algos import find_pairs_in_group
 
 
 # constant for threshold for recommending someone
@@ -40,6 +42,8 @@ def dashboard(request):
     # case 1: this person's in a group
     if user.group_set.count() > 0:
         group = list(user.group_set.all())[0] # get group this user is in
+        if group.matched:
+            return match_view(request)
         return render(request, 'homepage.html', {'group': group, 'user': user})
     # get map data
     matches = find_triadic_closures(user)
@@ -69,3 +73,10 @@ def logout_view(request):
 def match_view(request):
     user = request.user
     group = list(user.group_set.all())[0] # get group this user is in
+
+    if group.matched == False:
+        pair_group(group) # pair everyone
+    
+    # find all pairs and show it
+    pairs = find_pairs_in_group(group)
+    return render(request, 'homepage.html', {'group': group, 'pairs': pairs, 'user': user})

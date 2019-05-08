@@ -58,6 +58,9 @@ class RoommateSurveyForm(forms.Form):
                 if not Group.objects.filter(pk=join_group).exists():
                     self._errors['join_group'] = ['This group does not exist']
                     del join_group
+                elif Group.objects.get(pk=join_group).matched:
+                    self._errors['join_group'] = ['This group has already finished matching']
+                    del join_group
             
             # make sure group you want to create does not exist
             if create_group != None:
