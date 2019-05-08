@@ -5,12 +5,13 @@
 
 {% block content %}
 {% if user.category_set.count == 0 %}
-  Hi {{ user.username }}!
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-  <button type="submit">Submit</button>
-</form>
+<div class="has-text-centered margin-top-20-percent ">
+  Hi {{ user.first_name }}  {{ user.last_name }}!
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+      <button type="submit" style="display: inline;">Submit</button>
+    </form>
 {% else %}
   <h1 class='title'>Welcome back {{ user.username }}!</h2>
   {% if not group %}
@@ -32,5 +33,6 @@
   {% endif %}
 {% endif %}
 
-<a href="{% url 'logout' %}"><button>Logout</button></a>
+<a href="{% url 'logout' %}"><button style="display: inline;">Logout</button></a>
+</div> 
 {% endblock %}

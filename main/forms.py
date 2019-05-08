@@ -30,6 +30,17 @@ class CustomUserChangeForm(UserChangeForm):
 class RoommateSurveyForm(forms.Form):
     night_person = forms.BooleanField(label="Are you a night owl?", required=False)
     substances = forms.BooleanField(label="Do you partake in substances?", required=False)
+    rushing = forms.BooleanField(label = "Do you plan on rushing?", required=False)
+
+    show_that_best_describes_you = forms.ChoiceField(choices = [
+        ('friends', "Friends"), 
+        ('GOT', "Game of Thrones"), 
+        ('anime', "Naruto/Bleach/One Piece"),
+        ('blackmirror', "Black Mirror"), 
+        ('svalley', "Silicon Valley"),
+        ('gg', 'Gossip Girl'), 
+        ('na', "None of the Above")
+    ])
 
     penn_college = forms.ChoiceField(choices=[
         ('seas', "Engineering"),
@@ -44,6 +55,8 @@ class RoommateSurveyForm(forms.Form):
         ('football', "Football"),
         ('hockey', "Hockey")
     ])
+
+    competitive = forms.BooleanField(label="Are you competitive?", required=False)
 
     
     # get the choices
@@ -119,10 +132,21 @@ class RoommateSurveyForm(forms.Form):
         else:
             objects.append(self.helper_get_category(categories, 'no_substances'))
 
+        if data['rushing']:
+            objects.append(self.helper_get_category(categories, 'rushing'))
+        else:
+            objects.append(self.helper_get_category(categories, 'not_rushing'))
+
+        if data['competitive']:
+            objects.append(self.helper_get_category(categories, 'competitive'))
+        else:
+            objects.append(self.helper_get_category(categories, 'not_competitve'))
         
         objects.append(self.helper_get_category(categories, data['penn_college']))
 
         objects.append(self.helper_get_category(categories, data['sport']))
+
+        objects.append(self.helper_get_category(categories, data['show_that_best_describes_you']))
         
         if data['join_group'] != None:
             groups = Group.objects
