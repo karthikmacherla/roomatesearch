@@ -6,6 +6,11 @@ from .models import Group
 from django.core.exceptions import ObjectDoesNotExist
 from django.core.exceptions import ValidationError
 
+"""
+ Forms that are presented at the login and sign up screens
+
+"""
+
 class CustomUserCreationForm(UserCreationForm):
 
 	class Meta(UserCreationForm):
@@ -18,6 +23,10 @@ class CustomUserChangeForm(UserChangeForm):
         model = CustomUser
         fields = ('username', 'email')
 
+"""
+ Form that allows the user to emphasize qualities of their personality. 
+ This is the roomate survey rendered to the user. 
+"""
 class RoommateSurveyForm(forms.Form):
     night_person = forms.BooleanField(label="Are you a night owl?", required=False)
     substances = forms.BooleanField(label="Do you partake in substances?", required=False)
@@ -67,6 +76,8 @@ class RoommateSurveyForm(forms.Form):
         
         return form_data
 
+    # returns the object pointing to the specific 
+    # choice for a category
 
     def helper_get_category(self, objects, key):
         try:
@@ -77,6 +88,9 @@ class RoommateSurveyForm(forms.Form):
             obj.save()
             return obj
 
+    # fetches the object pointing to a group determined by 
+    # group name
+
     def helper_get_group(self, objects, key):
         try:
             obj = objects.get(pk=key)
@@ -84,6 +98,10 @@ class RoommateSurveyForm(forms.Form):
         except ObjectDoesNotExist:
             obj = Group(name=key)
             return obj
+
+    # After a user fills out the form, this function will add 
+    # add this user to the appropriate groups. Essentially adding 
+    # edges from the user to the foci (category).
 
     def process(self, user):
         data = self.cleaned_data

@@ -17,12 +17,17 @@ from .algos import find_triadic_closures
 # constant for threshold for recommending someone
 MATCH_THRESHOLD = 3
 
-# Create your views here.
-
+# This is a signup view for creating an account 
+# on our application. 
 class SignUp(generic.CreateView):
     form_class = CustomUserCreationForm
     success_url = reverse_lazy('login')
     template_name = 'signup.html'
+
+
+# This view redirect a logged in user to their homepage. 
+# A homepage can either be the roommate form, a status of their potential roommate,
+# or a screen showing those in their group. 
 
 def homepage(request):
     # redirects to form or home depending on if user has filled out form before
@@ -35,6 +40,9 @@ def homepage(request):
     else:
         return redirect('survey')
 
+# This view defines the dashboard, showing their future roommate status.
+# Finds the number of triadic closures between other users in any given time,
+# then returns the nunber of matches.
 def dashboard(request):
     user = request.user
     # case 1: this person's in a group
@@ -47,6 +55,7 @@ def dashboard(request):
     filtered = {k: v for k,v in matches.items() if v >= MATCH_THRESHOLD and k != user}
     return render(request, 'homepage.html', {'matches': filtered, 'user': user})
 
+# This view renders the survey. It then checks whether a form submission is valid. 
 
 def roommate_survey(request):
     # user submitted the form
@@ -61,10 +70,13 @@ def roommate_survey(request):
     user = request.user
     return render(request, 'homepage.html', {'form': form, 'user': user})
 
+# This view lets users log out of the app
 
 def logout_view(request):
     logout(request)
     return redirect('homepage')
+
+# Defines who their potential match is
 
 def match_view(request):
     user = request.user
