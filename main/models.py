@@ -9,13 +9,17 @@ from django.db import models
 
 
 class CustomUser(AbstractUser):
-	partner = models.OneToOneField('CustomUser', on_delete=models.CASCADE, blank=True, null=True)
-
 	def __str__(self):
 		return self.first_name + ' ' + self.last_name
 
+# pair of users
+class Pair(models.Model):
+	user1 = models.OneToOneField(CustomUser, on_delete=models.CASCADE, related_name="pair1")
+	user2 = models.OneToOneField(CustomUser, on_delete=models.CASCADE, related_name="pair2")
+
 # Category Model that represents choices the user makes. Ex. Category for 
 # people who are night people or drink. 
+
 
 class Category(models.Model):
 	name = models.CharField(max_length=50, primary_key=True)
@@ -28,3 +32,4 @@ class Group(models.Model):
 	name = models.CharField(max_length=50, primary_key=True)
 	users = models.ManyToManyField(CustomUser)
 	owner = models.OneToOneField(CustomUser, on_delete=models.CASCADE, related_name='group_owned')
+	matched = models.BooleanField(default=False)

@@ -20,15 +20,22 @@
       <p>{{ match.first_name }}: {{ tcs }} focal closures</p>
     {% endfor %}
   {% else %}
-    <h2 class='subtitle'>Here's everyone in {{ group.name }}</h2>
-    {% for member in group.users.all %}
-      <p>{{ member }}</p>
-    {% endfor %}
-    {% if group.owner == user %}
-      <h2 class='is-size-4'>You're the admin! Click the button to match!</h2>
-      <a href="{% url 'match' %}"><button>Match</button></a>
+    {% if pairs %}
+      <h2 class='subtitle'>Here's all the pairings in {{ group.name }}!</h2>
+      {% for pair in pairs %}
+        <p>{{ pair.user1 }} : {{ pair.user2 }}</p>
+      {% endfor %}
     {% else %}
-      <h2 class='subtitle'>We're just waiting on admin to match everyone now!</h2>
+      <h2 class='subtitle'>Here's everyone in {{ group.name }}</h2>
+      {% for member in group.users.all %}
+        <p>{{ member }}</p>
+      {% endfor %}
+      {% if group.owner == user %}
+        <h2 class='is-size-4'>You're the admin! Click the button to match!</h2>
+        <a href="{% url 'match' %}"><button>Match</button></a>
+      {% else %}
+        <h2 class='subtitle'>We're just waiting on admin to match everyone now!</h2>
+      {% endif %}
     {% endif %}
   {% endif %}
 {% endif %}
